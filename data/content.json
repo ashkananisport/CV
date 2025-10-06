@@ -1,0 +1,388 @@
+{
+  "en": {
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "portfolio": "Portfolio",
+      "achievements": "Achievements",
+      "contact": "Contact"
+    },
+    "hero": {
+      "name": "Ahmad Jaber",
+      "surname": "Ashkanani",
+      "title1": "FIFA Sports Agent",
+      "title2": "International Sports Director • Educational Leader"
+    },
+    "about": {
+      "title": "About Me",
+      "paragraphs": [
+        "Educational teacher at the Ministry of Education in Kuwait, specializing in Fine Arts Education at the secondary level.",
+        "Owner of Spark Sport Academy and Director of national teams at the General Authority for Applied Education and Training.",
+        "Internationally certified lecturer by the International Beta and the Kuwaiti International Institute, with expertise in educational and sports management.",
+        "FIFA Sports Agent • Founder of Ashkenani Sport Marketing"
+      ],
+      "cta": "Get In Touch"
+    },
+    "portfolio": {
+      "title": "Professional Journey",
+      "items": [
+        {
+          "title": "Kazma Sporting Club",
+          "period": "2006 - 2013",
+          "description": "Handball goalkeeper and administrative roles across multiple youth teams",
+          "image": "/handball-goalkeeper-in-action-at-sports-club.jpg"
+        },
+        {
+          "title": "Arab Sports Club",
+          "period": "2014 - 2019",
+          "description": "Futsal administrator and team manager, securing multiple championship titles",
+          "image": "/futsal-team-celebration-with-trophy.jpg"
+        },
+        {
+          "title": "General Authority for Applied Education",
+          "period": "2018 - Present",
+          "description": "Director of national teams for futsal and beach football",
+          "image": "/beach-football-match-at-sunset.jpg"
+        },
+        {
+          "title": "Kuwait National Team",
+          "period": "2022 - 2023",
+          "description": "Administrative manager of the Kuwait national beach soccer team",
+          "image": "/national-football-team-lineup.jpg"
+        },
+        {
+          "title": "Gulf Cup 26 Kuwait",
+          "period": "2024 - 2025",
+          "description": "Chairman of the Organizing Committee for Gulf Cup Championship",
+          "image": "/gulf-cup-football-championship-stadium.jpg"
+        },
+        {
+          "title": "Spark Sport Academy",
+          "period": "2021 - Present",
+          "description": "Founder and director of comprehensive sports training academy",
+          "image": "/modern-sports-academy-training-facility.jpg"
+        }
+      ]
+    },
+    "achievements": {
+      "title": "Achievements & Credentials",
+      "featured": [
+        {
+          "title": "FIFA Certified Agent",
+          "description": "Official FIFA sports agent certification in 2023",
+          "image": "/fifa-certificate-award-ceremony.jpg"
+        },
+        {
+          "title": "Level A Sports Manager",
+          "description": "Highest level certification from Kuwait Football Association",
+          "image": "/sports-management-certification-diploma.jpg"
+        },
+        {
+          "title": "Gulf Cup 26 Chairman",
+          "description": "Leading the organizing committee for Kuwait 2024-2025",
+          "image": "/gulf-cup-trophy-presentation.jpg"
+        },
+        {
+          "title": "166+ Athletes Managed",
+          "description": "Successfully representing male and female athletes across multiple sports",
+          "image": "/sports-team-group-photo-celebration.jpg"
+        }
+      ],
+      "certificationsTitle": "Professional Certifications",
+      "certifications": [
+        {
+          "title": "Level One Administrative Certificate",
+          "organization": "Kuwait Football Association",
+          "date": "2015",
+          "score": "95%",
+          "image": "/certificate-level-one-admin.jpg"
+        },
+        {
+          "title": "Level Two Administrative Certificate",
+          "organization": "Kuwait Football Association",
+          "date": "2017",
+          "image": "/certificate-level-two-admin.jpg"
+        },
+        {
+          "title": "Level Three Managerial Certificate",
+          "organization": "Kuwait Football Association",
+          "date": "2018",
+          "image": "/certificate-level-three-manager.jpg"
+        },
+        {
+          "title": "Football Law & Arbitration",
+          "organization": "Kuwait Football Association",
+          "date": "2018",
+          "image": "/certificate-football-law.jpg"
+        },
+        {
+          "title": "Sports Manager Level C",
+          "organization": "Kuwait Football Association",
+          "date": "2019",
+          "image": "/certificate-sports-manager-c.jpg"
+        },
+        {
+          "title": "Sports Manager Level B",
+          "organization": "Kuwait Football Association",
+          "date": "2020",
+          "image": "/certificate-sports-manager-b.jpg"
+        },
+        {
+          "title": "Sports Manager Level A",
+          "organization": "Kuwait Football Association",
+          "date": "2022",
+          "image": "/certificate-sports-manager-a.jpg"
+        },
+        {
+          "title": "Sports Injuries Certificate",
+          "organization": "Kuwait Football Association",
+          "date": "2022",
+          "image": "/certificate-sports-injuries.jpg"
+        },
+        {
+          "title": "International Olympic Games",
+          "organization": "Qatari Academy",
+          "date": "2020",
+          "image": "/certificate-olympic-games.jpg"
+        },
+        {
+          "title": "Sports Rehabilitation & Diagnosis",
+          "organization": "Kuwait Ministry of Health",
+          "date": "2021",
+          "image": "/certificate-sports-rehab.jpg"
+        },
+        {
+          "title": "Sports Injuries Diploma",
+          "organization": "Qatari Sports Academy",
+          "date": "2021",
+          "image": "/certificate-injuries-diploma.jpg"
+        },
+        {
+          "title": "Sports Psychology",
+          "organization": "International Institute",
+          "date": "2019",
+          "image": "/certificate-sports-psychology.jpg"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "subtitle": "Let's discuss how we can work together to achieve your sports management goals",
+      "info": {
+        "title": "Contact Information",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "locationValue": "Kuwait"
+      },
+      "social": "Connect With Me",
+      "form": {
+        "firstName": "First Name",
+        "firstNamePlaceholder": "John",
+        "lastName": "Last Name",
+        "lastNamePlaceholder": "Doe",
+        "email": "Email",
+        "emailPlaceholder": "john@example.com",
+        "phone": "Phone",
+        "phonePlaceholder": "+965 XXXX XXXX",
+        "message": "Message",
+        "messagePlaceholder": "Tell me about your project or inquiry...",
+        "submit": "Send Message"
+      },
+      "footer": "© 2025 Ahmad Jaber Ashkanani. All rights reserved."
+    }
+  },
+  "ar": {
+    "navigation": {
+      "home": "الرئيسية",
+      "about": "عني",
+      "portfolio": "الأعمال",
+      "achievements": "الإنجازات",
+      "contact": "تواصل"
+    },
+    "hero": {
+      "name": "أحمد جابر",
+      "surname": "أشكناني",
+      "title1": "وكيل رياضي معتمد من الفيفا",
+      "title2": "مدير رياضي دولي • قائد تعليمي"
+    },
+    "about": {
+      "title": "عني",
+      "paragraphs": [
+        "معلم تربوي في وزارة التربية في الكويت، متخصص في التربية الفنية في المرحلة الثانوية.",
+        "مالك أكاديمية سبارك الرياضية ومدير المنتخبات الوطنية في الهيئة العامة للتعليم التطبيقي والتدريب.",
+        "محاضر دولي معتمد من البيتا الدولية والمعهد الدولي الكويتي، مع خبرة في الإدارة التربوية والرياضية.",
+        "وكيل رياضي فيفا • مؤسس أشكناني للتسويق الرياضي"
+      ],
+      "cta": "تواصل معي"
+    },
+    "portfolio": {
+      "title": "المسيرة المهنية",
+      "items": [
+        {
+          "title": "نادي كاظمة الرياضي",
+          "period": "2006 - 2013",
+          "description": "حارس مرمى كرة اليد وأدوار إدارية في فرق الشباب",
+          "image": "/handball-goalkeeper-in-action-at-sports-club.jpg"
+        },
+        {
+          "title": "نادي العربي الرياضي",
+          "period": "2014 - 2019",
+          "description": "إداري كرة الصالات ومدير فريق، تحقيق عدة بطولات",
+          "image": "/futsal-team-celebration-with-trophy.jpg"
+        },
+        {
+          "title": "الهيئة العامة للتعليم التطبيقي",
+          "period": "2018 - حتى الآن",
+          "description": "مدير المنتخبات الوطنية لكرة الصالات والشاطئية",
+          "image": "/beach-football-match-at-sunset.jpg"
+        },
+        {
+          "title": "المنتخب الكويتي",
+          "period": "2022 - 2023",
+          "description": "المدير الإداري للمنتخب الكويتي لكرة القدم الشاطئية",
+          "image": "/national-football-team-lineup.jpg"
+        },
+        {
+          "title": "خليجي 26 الكويت",
+          "period": "2024 - 2025",
+          "description": "رئيس لجنة تنظيم بطولة كأس الخليج",
+          "image": "/gulf-cup-football-championship-stadium.jpg"
+        },
+        {
+          "title": "أكاديمية سبارك الرياضية",
+          "period": "2021 - حتى الآن",
+          "description": "مؤسس ومدير أكاديمية تدريب رياضي شاملة",
+          "image": "/modern-sports-academy-training-facility.jpg"
+        }
+      ]
+    },
+    "achievements": {
+      "title": "الإنجازات والشهادات",
+      "featured": [
+        {
+          "title": "وكيل معتمد من الفيفا",
+          "description": "شهادة وكيل رياضي رسمية من الفيفا في 2023",
+          "image": "/fifa-certificate-award-ceremony.jpg"
+        },
+        {
+          "title": "مدير رياضي المستوى A",
+          "description": "أعلى مستوى شهادة من اتحاد الكويت لكرة القدم",
+          "image": "/sports-management-certification-diploma.jpg"
+        },
+        {
+          "title": "رئيس خليجي 26",
+          "description": "قيادة اللجنة المنظمة لبطولة كأس الخليج الكويت 2024-2025",
+          "image": "/gulf-cup-trophy-presentation.jpg"
+        },
+        {
+          "title": "166+ رياضي تحت الإدارة",
+          "description": "تمثيل ناجح للرياضيين والرياضيات في رياضات متعددة",
+          "image": "/sports-team-group-photo-celebration.jpg"
+        }
+      ],
+      "certificationsTitle": "الشهادات المهنية",
+      "certifications": [
+        {
+          "title": "شهادة المستوى الإداري الأول",
+          "organization": "اتحاد الكويت لكرة القدم",
+          "date": "2015",
+          "score": "95%",
+          "image": "/certificate-level-one-admin.jpg"
+        },
+        {
+          "title": "شهادة المستوى الإداري الثاني",
+          "organization": "اتحاد الكويت لكرة القدم",
+          "date": "2017",
+          "image": "/certificate-level-two-admin.jpg"
+        },
+        {
+          "title": "شهادة المستوى الإداري الثالث",
+          "organization": "اتحاد الكويت لكرة القدم",
+          "date": "2018",
+          "image": "/certificate-level-three-manager.jpg"
+        },
+        {
+          "title": "قانون كرة القدم والتحكيم",
+          "organization": "اتحاد الكويت لكرة القدم",
+          "date": "2018",
+          "image": "/certificate-football-law.jpg"
+        },
+        {
+          "title": "مدير رياضي المستوى C",
+          "organization": "اتحاد الكويت لكرة القدم",
+          "date": "2019",
+          "image": "/certificate-sports-manager-c.jpg"
+        },
+        {
+          "title": "مدير رياضي المستوى B",
+          "organization": "اتحاد الكويت لكرة القدم",
+          "date": "2020",
+          "image": "/certificate-sports-manager-b.jpg"
+        },
+        {
+          "title": "مدير رياضي المستوى A",
+          "organization": "اتحاد الكويت لكرة القدم",
+          "date": "2022",
+          "image": "/certificate-sports-manager-a.jpg"
+        },
+        {
+          "title": "شهادة الإصابات الرياضية",
+          "organization": "اتحاد الكويت لكرة القدم",
+          "date": "2022",
+          "image": "/certificate-sports-injuries.jpg"
+        },
+        {
+          "title": "الألعاب الأولمبية الدولية",
+          "organization": "الأكاديمية القطرية",
+          "date": "2020",
+          "image": "/certificate-olympic-games.jpg"
+        },
+        {
+          "title": "التأهيل الرياضي والتشخيص",
+          "organization": "وزارة الصحة الكويتية",
+          "date": "2021",
+          "image": "/certificate-sports-rehab.jpg"
+        },
+        {
+          "title": "دبلوم الإصابات الرياضية",
+          "organization": "الأكاديمية الرياضية القطرية",
+          "date": "2021",
+          "image": "/certificate-injuries-diploma.jpg"
+        },
+        {
+          "title": "علم النفس الرياضي",
+          "organization": "المعهد الدولي",
+          "date": "2019",
+          "image": "/certificate-sports-psychology.jpg"
+        }
+      ]
+    },
+    "contact": {
+      "title": "تواصل معي",
+      "subtitle": "دعنا نناقش كيف يمكننا العمل معاً لتحقيق أهدافك في الإدارة الرياضية",
+      "info": {
+        "title": "معلومات التواصل",
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "location": "الموقع",
+        "locationValue": "الكويت"
+      },
+      "social": "تواصل معي",
+      "form": {
+        "firstName": "الاسم الأول",
+        "firstNamePlaceholder": "أحمد",
+        "lastName": "اسم العائلة",
+        "lastNamePlaceholder": "محمد",
+        "email": "البريد الإلكتروني",
+        "emailPlaceholder": "ahmad@example.com",
+        "phone": "الهاتف",
+        "phonePlaceholder": "+965 XXXX XXXX",
+        "message": "الرسالة",
+        "messagePlaceholder": "أخبرني عن مشروعك أو استفسارك...",
+        "submit": "إرسال الرسالة"
+      },
+      "footer": "© 2025 أحمد جابر أشكناني. جميع الحقوق محفوظة."
+    }
+  }
+}
