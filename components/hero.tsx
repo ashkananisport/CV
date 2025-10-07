@@ -18,9 +18,9 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-secondary/90 via-secondary/70 to-secondary/90 z-10" />
         <img
-          src="/professional-sports-stadium-aerial-view-at-sunset.jpg"
+          src={content.hero.slider}
           alt="Sports Background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
       </div>
 
@@ -28,6 +28,15 @@ export default function Hero() {
       <div
         className={`relative z-20 text-center px-4 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
       >
+        {/* Profile Picture */}
+        <div className="mb-6 md:mb-8">
+          <img
+            src={content.hero.pic} 
+            alt="Profile"
+            className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full border-4 border-primary mx-auto object-cover object-top"
+          />
+        </div>
+
         <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-4 md:mb-6 tracking-tight">
           {content.hero.name}
           <br />

@@ -8,10 +8,12 @@
       "contact": "Contact"
     },
     "hero": {
-      "name": "Ahmad Jaber",
+      "name": "Mr. Ahmad Jaber",
       "surname": "Ashkanani",
       "title1": "FIFA Sports Agent",
-      "title2": "International Sports Director • Educational Leader"
+      "title2": "International Sports Director • Educational Leader",
+      "pic":"myphoto.Jpg",
+      "slider":"slider.jpg"
     },
     "about": {
       "title": "About Me",
@@ -201,10 +203,12 @@
       "contact": "تواصل"
     },
     "hero": {
-      "name": "أحمد جابر",
+      "name": " أ. أحمد جابر",
       "surname": "أشكناني",
       "title1": "وكيل رياضي معتمد من الفيفا",
-      "title2": "مدير رياضي دولي • قائد تعليمي"
+      "title2": "مدير رياضي دولي • قائد تعليمي",
+      "pic":"myphoto.Jpg",
+      "slider":"slider.jpg"
     },
     "about": {
       "title": "عني",
