@@ -1,11 +1,14 @@
 "use client"
 
-import Hero from "@/components/hero"
-import About from "@/components/about"
-import Portfolio from "@/components/portfolio"
-import Achievements from "@/components/achievements"
-import Contact from "@/components/contact"
-import Navigation from "@/components/navigation"
+import dynamic from "next/dynamic"
+
+// تعطيل SSR لكل المكونات التي تعتمد على اللغة
+const Navigation = dynamic(() => import("@/components/navigation"), { ssr: false })
+const Hero = dynamic(() => import("@/components/hero"), { ssr: false })
+const About = dynamic(() => import("@/components/about"), { ssr: false })
+const Portfolio = dynamic(() => import("@/components/portfolio"), { ssr: false })
+const Achievements = dynamic(() => import("@/components/achievements"), { ssr: false })
+const Contact = dynamic(() => import("@/components/contact"), { ssr: false })
 
 export default function Home() {
   return (

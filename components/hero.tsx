@@ -18,9 +18,9 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-secondary/90 via-secondary/70 to-secondary/90 z-10" />
         <img
-          src={content.hero.slider}
+          src="/professional-sports-stadium-aerial-view-at-sunset.jpg"
           alt="Sports Background"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover"
         />
       </div>
 
@@ -31,7 +31,7 @@ export default function Hero() {
         {/* Profile Picture */}
         <div className="mb-6 md:mb-8">
           <img
-            src={content.hero.pic} 
+            src={content.siteInfo.profileImage} // Replace with your actual profile image path
             alt="Profile"
             className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full border-4 border-primary mx-auto object-cover object-top"
           />
