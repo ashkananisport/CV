@@ -101,14 +101,18 @@ export default function Portfolio() {
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                    <div className="bg-primary px-3 py-1.5 rounded-md inline-block mb-3">
-                      <p className="text-sm font-bold">{item.period}</p>
-                    </div>
-                    <h3 className="font-serif text-xl md:text-2xl font-bold mb-2">{item.title}</h3>
-                    <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                      {item.description}
-                    </p>
+                  <div className="bg-primary px-3 py-1.5 rounded-md inline-block mb-3">
+                    <p className="text-sm font-bold">{item.period}</p>
                   </div>
+                  <h3 className="font-serif text-xl md:text-2xl font-bold mb-2">{item.title}</h3>
+                  {item.details && Array.isArray(item.details) && (
+                    <ul className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 list-disc pl-5 space-y-1">
+                      {item.details.map((point, i) => (
+                        <li key={i}>{point}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
                 </div>
               ))}
             </div>
