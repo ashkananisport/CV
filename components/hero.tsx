@@ -26,7 +26,7 @@ export default function Hero() {
 
       {/* Hero Content */}
       <div
-        className={`relative z-20 text-center px-4 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+        className={`relative z-20 text-center px-4 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
       >
         {/* Profile Picture */}
         <div className="mb-6 md:mb-8">

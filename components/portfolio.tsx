@@ -33,19 +33,20 @@ export default function Portfolio() {
     return () => observer.disconnect()
   }, [])
 
-  const handlePrevious = () => {
-    setCurrentIndex((prev) => Math.max(0, prev - 1))
-  }
+const handleNext = () => {
+  setCurrentIndex((prev) => Math.min(maxIndex, prev + itemsPerPage))
+}
 
-  const handleNext = () => {
-    setCurrentIndex((prev) => Math.min(maxIndex, prev + 1))
-  }
+const handlePrevious = () => {
+  setCurrentIndex((prev) => Math.max(0, prev - itemsPerPage))
+}
+
 
   return (
     <section id="portfolio" ref={sectionRef} className="py-20 md:py-32 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          className={`text-center mb-16 transition-all duration-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
             {content.portfolio.title}
@@ -76,7 +77,7 @@ export default function Portfolio() {
           {/* Slider Container */}
           <div className="overflow-hidden">
             <div
-              className="flex transition-transform duration-500 ease-in-out gap-6"
+              className="flex transition-transform duration-300 ease-in-out gap-6"
               style={{
                 transform: `translateX(${language === "ar" ? "" : "-"}${currentIndex * (100 / itemsPerPage)}%)`,
               }}
@@ -84,7 +85,7 @@ export default function Portfolio() {
               {content.portfolio.items.map((item, index) => (
                 <div
                   key={index}
-                  className={`flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group relative overflow-hidden rounded-lg bg-card shadow-lg hover:shadow-2xl transition-all duration-500 ${
+                  className={`flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group relative overflow-hidden rounded-lg bg-card shadow-lg hover:shadow-2xl transition-all duration-300 ${
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                   }`}
                   style={{ transitionDelay: `${index * 100}ms` }}
@@ -99,14 +100,14 @@ export default function Portfolio() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-6 group-hover:translate-y-0 transition-transform duration-300">
                   <div className="bg-primary px-3 py-1.5 rounded-md inline-block mb-3">
                     <p className="text-sm font-bold">{item.period}</p>
                   </div>
                   <h3 className="font-serif text-xl md:text-2xl font-bold mb-2">{item.title}</h3>
                   {item.details && Array.isArray(item.details) && (
-                    <ul className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 list-disc pl-5 space-y-1">
+                    <ul className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 list-disc pl-5 space-y-1">
                       {item.details.map((point, i) => (
                         <li key={i}>{point}</li>
                       ))}

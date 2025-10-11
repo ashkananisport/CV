@@ -72,7 +72,7 @@ export default function About() {
         </div>
 
         <div
-          className={`grid lg:grid-cols-2 gap-12 md:gap-16 items-start transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          className={`grid lg:grid-cols-2 gap-12 md:gap-16 items-start transition-all duration-300 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           {/* Image Grid - Using images from JSON */}
           <div className="grid grid-cols-2 gap-4 lg:sticky lg:top-24">

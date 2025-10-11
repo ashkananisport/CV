@@ -59,7 +59,7 @@ export default function Contact() {
       <section id="contact" ref={sectionRef} className="py-20 md:py-32 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+            className={`text-center mb-16 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
               {content.contact.title}
@@ -71,7 +71,7 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2 gap-12 md:gap-16 max-w-6xl mx-auto">
             {/* Contact Information */}
             <div
-              className={`space-y-8 transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+              className={`space-y-8 transition-all duration-500 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
             >
               <div>
                 <h3 className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
@@ -158,7 +158,7 @@ export default function Contact() {
             </div>
 
             <div
-              className={`transition-all duration-1000 delay-400 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
+              className={`transition-all duration-500 delay-400 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
             >
               <form onSubmit={handleSubmit} className="space-y-6 bg-card p-6 sm:p-8 rounded-lg shadow-lg">
                 <div className="grid sm:grid-cols-2 gap-6">
