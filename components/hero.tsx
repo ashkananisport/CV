@@ -18,9 +18,9 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-secondary/90 via-secondary/70 to-secondary/90 z-10" />
         <img
-          src="/professional-sports-stadium-aerial-view-at-sunset.jpg"
+          src={content.siteInfo.heroBackgroundImage} // Replace with your actual background image path
           alt="Sports Background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-bottom"
         />
       </div>
 

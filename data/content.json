@@ -81,7 +81,13 @@
           "title": "Kazma Sporting Club",
           "period": "2006 - 2013",
           "description": "Handball goalkeeper from 2006 - 2013. Joined the under 14, under 16, and under 17 teams which won the third place in the Union Cup Championship, earning the bronze medal.",
-          "image": "/handball-goalkeeper-in-action-at-sports-club.jpg",
+         "image": "/kazma2.jpg",
+          "gallery": [
+            "/kazma2.jpg",
+            "/kazma1.jpg",
+            "/kazma3.jpg",
+            "/kazma4.jpg"
+          ],
           "details": [
             "Handball goalkeeper from 2006 - 2013",
             "Joined under 14, under 16, and under 17 teams",
@@ -92,7 +98,12 @@
           "title": "Arab Sports Club - Futsal Youth",
           "period": "2014 - 2015",
           "description": "The official of the late Ahmed Al-Sinni's Ramadan Championship for Futsal Football at the Arab Sports Club in 2014. Administrator of Futsal Youth Football.",
-          "image": "/futsal-team-celebration-with-trophy.jpg",
+          "image": "/arabi3.png",
+          "gallery": [
+            "/arabi3.png",
+            "/arabi1.jpg",
+            "/arabi2.jpg"
+          ],
           "details": [
             "Official of Ahmed Al-Sinni's Ramadan Championship for Futsal 2014",
             "Administrator of Futsal Youth Football",
@@ -106,6 +117,12 @@
           "period": "2015 - 2019",
           "description": "Administrative of the grass football team for 4 years under the supervision of the experienced administrative director of the football sector, Khalid Al-Qabandi.",
           "image": "/professional-football-team-training-session.jpg",
+          "gallery": [
+            "/professional-football-team-training-session.jpg",
+            "/football-team-match.jpg",
+            "/football-team-victory.jpg",
+            "/football-team-management.jpg"
+          ],
           "details": [
             "Administrative for grass football team - 4 years",
             "Under supervision of Khalid Al-Qabandi",
@@ -120,6 +137,12 @@
           "period": "2003 - 2005",
           "description": "Administrative for the 13-year-old teams with multiple championship achievements.",
           "image": "/youth-football-team-trophy-celebration.jpg",
+          "gallery": [
+            "/youth-football-team-trophy-celebration.jpg",
+            "/youth-football-training.jpg",
+            "/youth-football-match.jpg",
+            "/youth-football-award.jpg"
+          ],
           "details": [
             "Administrative for U-13 team 2004-2003 category",
             "Secured second place in the league",
@@ -135,6 +158,12 @@
           "period": "2018 - 2019",
           "description": "Administrator for the under-17 youth team and first team matches in Federation Cup.",
           "image": "/sports-solidarity-team-action.jpg",
+          "gallery": [
+            "/sports-solidarity-team-action.jpg",
+            "/sports-solidarity-training.jpg",
+            "/sports-solidarity-match.jpg",
+            "/sports-solidarity-meeting.jpg"
+          ],
           "details": [
             "Administrator for U-17 youth team 2002-2001 age group",
             "Appointed as administrator for 20-year-old youth team",
@@ -147,6 +176,12 @@
           "period": "2018 - 2019",
           "description": "Administrative for the U-13 team, securing first place in Kuwait Football Federation Cup.",
           "image": "/youth-team-championship-celebration.jpg",
+          "gallery": [
+            "/youth-team-championship-celebration.jpg",
+            "/youth-team-training-session.jpg",
+            "/youth-team-match-action.jpg",
+            "/youth-team-award-ceremony.jpg"
+          ],
           "details": [
             "Administrative for U-13 team",
             "Secured first place in Kuwaiti Football Federation Cup 2019-2020"
@@ -157,6 +192,12 @@
           "period": "2006 - 2007",
           "description": "Manager of the Yellow team for U-13 category, securing second place in the league.",
           "image": "/youth-football-match-action.jpg",
+          "gallery": [
+            "/youth-football-match-action.jpg",
+            "/yellow-team-training.jpg",
+            "/yellow-team-celebration.jpg",
+            "/yellow-team-management.jpg"
+          ],
           "details": ["Manager of Yellow team U-13 category 2006-2007", "Secured second place in the league"]
         },
         {
@@ -164,6 +205,13 @@
           "period": "2018 - Present",
           "description": "Administrative manager of futsal and beach football teams with multiple championship achievements.",
           "image": "/beach-football-match-at-sunset.jpg",
+          "gallery": [
+            "/beach-football-match-at-sunset.jpg",
+            "/futsal-team-training.jpg",
+            "/beach-football-trophy.jpg",
+            "/futsal-team-celebration.jpg",
+            "/team-management-meeting.jpg"
+          ],
           "details": [
             "Administrative manager of futsal team",
             "Achieved first place in University Futsal Cup",
@@ -187,6 +235,12 @@
           "period": "2022 - 2023",
           "description": "Administrative manager of the Kuwaiti national beach soccer team.",
           "image": "/national-football-team-lineup.jpg",
+          "gallery": [
+            "/national-football-team-lineup.jpg",
+            "/beach-soccer-team-training.jpg",
+            "/beach-soccer-match-action.jpg",
+            "/beach-soccer-team-management.jpg"
+          ],
           "details": [
             "Administrative manager of Kuwait national beach soccer team",
             "International competitions representation"
@@ -197,6 +251,12 @@
           "period": "2024 - 2025",
           "description": "Chairman of the Organizing Committee for the Gulf Cup Championship in Kuwait (Gulf 26).",
           "image": "/gulf-cup-football-championship-stadium.jpg",
+          "gallery": [
+            "/gulf-cup-football-championship-stadium.jpg",
+            "/gulf-cup-organizing-committee.jpg",
+            "/gulf-cup-meeting.jpg",
+            "/gulf-cup-preparation.jpg"
+          ],
           "details": ["Chairman of Organizing Committee", "Gulf Cup Championship in Kuwait", "Gulf 26 - 2024-2025"]
         },
         {
@@ -204,6 +264,12 @@
           "period": "2017 - 2018",
           "description": "Administrator of Kuwait Under-16 national team with training camp in Qatar.",
           "image": "/youth-national-team-training.jpg",
+          "gallery": [
+            "/youth-national-team-training.jpg",
+            "/youth-national-team-qatar-camp.jpg",
+            "/youth-national-team-match.jpg",
+            "/youth-national-team-meeting.jpg"
+          ],
           "details": [
             "Administrator of Kuwait U-16 national team",
             "Born 2005 category",
@@ -215,6 +281,12 @@
           "period": "2020",
           "description": "Signed educational and recreational training camp with comprehensive programs.",
           "image": "/educational-sports-camp-activities.jpg",
+          "gallery": [
+            "/educational-sports-camp-activities.jpg",
+            "/educational-camp-training.jpg",
+            "/educational-camp-students.jpg",
+            "/educational-camp-programs.jpg"
+          ],
           "details": [
             "Educational and recreational training camp",
             "Group of students from middle and high school",
@@ -227,6 +299,12 @@
           "period": "2023",
           "description": "Participation in MADCUP World Club Championship in Madrid, Spain for youth stages with Spark national team.",
           "image": "/international-youth-tournament-madrid.jpg",
+          "gallery": [
+            "/international-youth-tournament-madrid.jpg",
+            "/madcup-spark-team.jpg",
+            "/madcup-training-session.jpg",
+            "/madcup-match-action.jpg"
+          ],
           "details": ["MADCUP World Club Championship", "Madrid, Spain", "Youth stages with Spark national team"]
         },
         {
@@ -234,6 +312,13 @@
           "period": "2021 - Present",
           "description": "Founder and director of comprehensive sports training academy.",
           "image": "/modern-sports-academy-training-facility.jpg",
+          "gallery": [
+            "/modern-sports-academy-training-facility.jpg",
+            "/spark-academy-training.jpg",
+            "/spark-academy-students.jpg",
+            "/spark-academy-programs.jpg",
+            "/spark-academy-facility.jpg"
+          ],
           "details": [
             "Founder and Owner",
             "Comprehensive sports training programs",
@@ -505,14 +590,20 @@
       },
       "cta": "تواصل معي"
     },
-    "portfolio": {
+     "portfolio": {
       "title": "المسيرة المهنية",
       "items": [
         {
           "title": "نادي كاظمة الرياضي",
           "period": "2006 - 2013",
           "description": "حارس كرة يد من سنة 2006 - 2013م. الانضمام لفريق تحت 14 سنة، 16 سنة، وتحت 17 سنة حاصل على المركز الثالث ببطولة كأس الاتحاد الميدالية البرونزية",
-          "image": "/handball-goalkeeper-in-action-at-sports-club.jpg",
+          "image": "/kazma2.jpg",
+          "gallery": [
+            "/kazma2.jpg",
+            "/kazma1.jpg",
+            "/kazma3.jpg",
+            "/kazma4.jpg"
+          ],
           "details": [
             "حارس كرة يد من سنة 2006 - 2013م",
             "الانضمام لفريق تحت 14 سنة، 16 سنة، وتحت 17 سنة",
@@ -523,7 +614,12 @@
           "title": "نادي العربي الرياضي - ناشئين الصالات",
           "period": "2014 - 2015",
           "description": "مسؤول البطولة الرمضانية للمرحوم احمد السني لكرة قدم الصالات للنادي العربي سنة 2014م. إداري ناشئين كرة قدم الصالات",
-          "image": "/futsal-team-celebration-with-trophy.jpg",
+          "image": "/arabi3.png",
+          "gallery": [
+            "/arabi3.png",
+            "/arabi1.jpg",
+            "/arabi2.jpg"
+          ],
           "details": [
             "مسؤول البطولة الرمضانية للمرحوم احمد السني لكرة قدم الصالات 2014م",
             "إداري ناشئين كرة قدم الصالات",
@@ -537,6 +633,12 @@
           "period": "2015 - 2019",
           "description": "إداري كرة قدم العشبي فريق لمدة 4 سنوات تحت إشراف الخبرة الإدارية مدير قطاع كرة القدم خالد القبندي",
           "image": "/professional-football-team-training-session.jpg",
+          "gallery": [
+            "/professional-football-team-training-session.jpg",
+            "/football-team-match.jpg",
+            "/football-team-victory.jpg",
+            "/football-team-management.jpg"
+          ],
           "details": [
             "إداري كرة قدم العشبي فريق لمدة 4 سنوات",
             "تحت إشراف خالد القبندي",
@@ -551,6 +653,12 @@
           "period": "2003 - 2005",
           "description": "إداري لفريق ال 13 سنة لفئة مع إنجازات بطولات متعددة",
           "image": "/youth-football-team-trophy-celebration.jpg",
+          "gallery": [
+            "/youth-football-team-trophy-celebration.jpg",
+            "/youth-football-training.jpg",
+            "/youth-football-match.jpg",
+            "/youth-football-award.jpg"
+          ],
           "details": [
             "إداري لفريق ال 13 سنة لفئة 2004-2003",
             "الحصول على المركز الثاني في الدوري",
@@ -566,6 +674,12 @@
           "period": "2018 - 2019",
           "description": "مدير فريق الناشئين تحت 17 ومباريات الفريق الأول في كأس الاتحاد",
           "image": "/sports-solidarity-team-action.jpg",
+          "gallery": [
+            "/sports-solidarity-team-action.jpg",
+            "/sports-solidarity-training.jpg",
+            "/sports-solidarity-match.jpg",
+            "/sports-solidarity-meeting.jpg"
+          ],
           "details": [
             "مدير فريق الناشئين تحت 17 سنة لفئة 2002-2001",
             "في نصف الموسم تم تكليفي إداري لفريق 20 سنة فئة الشباب",
@@ -578,6 +692,12 @@
           "period": "2018 - 2019",
           "description": "إداري لفريق تحت ال 13 سنة، الحصول على المركز الأول لكأس الاتحاد الكويتي لكرة القدم",
           "image": "/youth-team-championship-celebration.jpg",
+          "gallery": [
+            "/youth-team-championship-celebration.jpg",
+            "/youth-team-training-session.jpg",
+            "/youth-team-match-action.jpg",
+            "/youth-team-award-ceremony.jpg"
+          ],
           "details": [
             "إداري لفريق تحت ال 13 سنة",
             "الحصول على المركز الأول لكأس الاتحاد الكويتي لكرة القدم 2020 - 2019"
@@ -588,6 +708,12 @@
           "period": "2006 - 2007",
           "description": "مدير فريق الصفار تحت 13 سنة لفئة، حاصل على المركز الثاني في الدوري",
           "image": "/youth-football-match-action.jpg",
+          "gallery": [
+            "/youth-football-match-action.jpg",
+            "/yellow-team-training.jpg",
+            "/yellow-team-celebration.jpg",
+            "/yellow-team-management.jpg"
+          ],
           "details": ["مدير فريق الصفار تحت 13 سنة لفئة 2007 - 2006", "حاصل على المركز الثاني في الدوري"]
         },
         {
@@ -595,6 +721,13 @@
           "period": "2018 - حتى الآن",
           "description": "إداري فريق كرة الصالات وكرة الشاطئ مع إنجازات بطولات متعددة",
           "image": "/beach-football-match-at-sunset.jpg",
+          "gallery": [
+            "/beach-football-match-at-sunset.jpg",
+            "/futsal-team-training.jpg",
+            "/beach-football-trophy.jpg",
+            "/futsal-team-celebration.jpg",
+            "/team-management-meeting.jpg"
+          ],
           "details": [
             "إداري فريق كرة الصالات",
             "الحصول على المركز الأول في كأس الجامعات لكرة قدم الصالات",
@@ -615,6 +748,12 @@
           "period": "2022 - 2023",
           "description": "إداري المنتخب الكويتي الأول لكرة القدم الشاطئية",
           "image": "/national-football-team-lineup.jpg",
+          "gallery": [
+            "/national-football-team-lineup.jpg",
+            "/beach-soccer-team-training.jpg",
+            "/beach-soccer-match-action.jpg",
+            "/beach-soccer-team-management.jpg"
+          ],
           "details": ["إداري المنتخب الكويتي الأول لكرة القدم الشاطئية", "تمثيل المسابقات الدولية"]
         },
         {
@@ -622,6 +761,12 @@
           "period": "2024 - 2025",
           "description": "رئيس لجنة تنظيم بطولة كأس الخليج في الكويت (خليجي 26)",
           "image": "/gulf-cup-football-championship-stadium.jpg",
+          "gallery": [
+            "/gulf-cup-football-championship-stadium.jpg",
+            "/gulf-cup-organizing-committee.jpg",
+            "/gulf-cup-meeting.jpg",
+            "/gulf-cup-preparation.jpg"
+          ],
           "details": ["رئيس لجنة تنظيم", "بطولة كأس الخليج في الكويت", "خليجي 26 - 2025-2024"]
         },
         {
@@ -629,6 +774,12 @@
           "period": "2017 - 2018",
           "description": "إداري منتخب الكويت للبراعم مواليد 2005 مع معسكر قطر مع المنتخب الوطني",
           "image": "/youth-national-team-training.jpg",
+          "gallery": [
+            "/youth-national-team-training.jpg",
+            "/youth-national-team-qatar-camp.jpg",
+            "/youth-national-team-match.jpg",
+            "/youth-national-team-meeting.jpg"
+          ],
           "details": ["إداري منتخب الكويت للبراعم", "مواليد 2005", "معسكر قطر مع المنتخب الوطني"]
         },
         {
@@ -636,6 +787,12 @@
           "period": "2020",
           "description": "التوقيع مع معهد سمارت مايند التعليمي والدعاب الى معسكر تدريبي ترفيهي",
           "image": "/educational-sports-camp-activities.jpg",
+          "gallery": [
+            "/educational-sports-camp-activities.jpg",
+            "/educational-camp-training.jpg",
+            "/educational-camp-students.jpg",
+            "/educational-camp-programs.jpg"
+          ],
           "details": [
             "معسكر تدريبي ترفيهي",
             "مجموعة من الطلبة والطالبات من المرحلة المتوسطة والثانوية",
@@ -648,6 +805,12 @@
           "period": "2023",
           "description": "المشاركة في بطولة العالم لفندقية MADCUP في مدينة مدريد أسبانيا للمراحل السنية مع منتخب سبارك",
           "image": "/international-youth-tournament-madrid.jpg",
+          "gallery": [
+            "/international-youth-tournament-madrid.jpg",
+            "/madcup-spark-team.jpg",
+            "/madcup-training-session.jpg",
+            "/madcup-match-action.jpg"
+          ],
           "details": ["بطولة العالم لفندقية MADCUP", "مدريد، أسبانيا", "المراحل السنية مع منتخب سبارك"]
         },
         {
@@ -655,10 +818,18 @@
           "period": "2021 - حتى الآن",
           "description": "مؤسس ومدير أكاديمية تدريب رياضي شاملة",
           "image": "/modern-sports-academy-training-facility.jpg",
+          "gallery": [
+            "/modern-sports-academy-training-facility.jpg",
+            "/spark-academy-training.jpg",
+            "/spark-academy-students.jpg",
+            "/spark-academy-programs.jpg",
+            "/spark-academy-facility.jpg"
+          ],
           "details": ["مؤسس ومالك", "برامج تدريب رياضي شاملة", "التركيز على تطوير الشباب", "تخصصات رياضية متعددة"]
         }
       ]
     },
+    
     "achievements": {
       "title": "الإنجازات والشهادات",
       "featured": [
@@ -686,68 +857,68 @@
       "certificationsTitle": "الشهادات المهنية",
       "certifications": [
         {
-          "title": "حصادة المستوى الأول للإداري",
+          "title": "حاصل على شهادة المستوى الأول للإداري",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2015",
           "score": "بدرجة 95٪",
           "image": "/certificate-level-one-admin.jpg"
         },
         {
-          "title": "حصادة المستوى الثاني للإداريين",
+          "title": "حاصل على شهادة المستوى الثاني للإداريين",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2017",
           "image": "/certificate-level-two-admin.jpg"
         },
         {
-          "title": "حصادة المستوى الثالث للمدراء",
+          "title": "حاصل على شهادة المستوى الثالث للمدراء",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2018",
           "image": "/certificate-level-three-manager.jpg"
         },
         {
-          "title": "حصادة قانون كرة القدم {التحكيم}",
+          "title": "حاصل على شهادة قانون كرة القدم {التحكيم}",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2018",
           "image": "/certificate-football-law.jpg"
         },
         {
-          "title": "حصادة المدراء الرياضيين المستوى C الثاني على الدفعة",
+          "title": "حاصل على شهادة المدراء الرياضيين المستوى C الثاني على الدفعة",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2019",
           "image": "/certificate-sports-manager-c.jpg"
         },
         {
-          "title": "حصادة المدراء الرياضيين المستوى B",
+          "title": "حاصل على شهادة المدراء الرياضيين المستوى B",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2020",
           "image": "/certificate-sports-manager-b.jpg"
         },
         {
-          "title": "حصادة المدراء الرياضيين المستوى A",
+          "title": "حاصل على شهادة المدراء الرياضيين المستوى A",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2022",
           "image": "/certificate-sports-manager-a.jpg"
         },
         {
-          "title": "حصادة الإصابات الرياضية في الملعب المستوى الأول",
+          "title": "حاصل على شهادة الإصابات الرياضية في الملعب المستوى الأول",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2022",
           "image": "/certificate-sports-injuries.jpg"
         },
         {
-          "title": "حصادة الملعاب الأولمبية العالمية",
+          "title": "حاصل على شهادة الملعاب الأولمبية العالمية",
           "organization": "أكاديمية القطرية",
           "date": "2020",
           "image": "/certificate-olympic-games.jpg"
         },
         {
-          "title": "حصادة الاستشفاء الرياضي و تشخيص الإصابات",
+          "title": "حاصل على شهادة الاستشفاء الرياضي و تشخيص الإصابات",
           "organization": "وزارة الصحة الكويتية - د. محمد الدوسري",
           "date": "2021",
           "image": "/certificate-sports-rehab.jpg"
         },
         {
-          "title": "حصادة دبلوم إصابات الملعب",
+          "title": "حاصل على شهادة دبلوم إصابات الملعب",
           "organization": "الأكاديمية الرياضية القطرية",
           "date": "2021",
           "image": "/certificate-injuries-diploma.jpg"
