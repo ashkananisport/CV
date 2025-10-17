@@ -41,7 +41,7 @@ export default function Navigation() {
             <a href="#home" className="relative z-10">
               <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden ring-2 ring-primary/30 shadow-lg">
                 <Image
-                  src={content.siteInfo.profileImage || "/placeholder.svg"}
+                  src={content.siteInfo.navbarLogo || "/placeholder.svg"}
                   alt="Ahmad Jaber Ashkanani"
                   fill
                   className="object-cover object-top"

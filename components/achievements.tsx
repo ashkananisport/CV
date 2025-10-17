@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Award, GraduationCap, Trophy, Users, ChevronLeft, ChevronRight } from "lucide-react"
+import { Award, GraduationCap, Trophy, Users, ChevronLeft, ChevronRight, X, BookOpen } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import ImageLightbox from "./image-lightbox"
 
@@ -10,13 +10,33 @@ const iconMap = [Award, GraduationCap, Trophy, Users]
 export default function Achievements() {
   const [isVisible, setIsVisible] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [coursesCurrentIndex, setCoursesCurrentIndex] = useState(0)
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
+  const [activeTab, setActiveTab] = useState<"certifications" | "courses">("certifications")
   const sectionRef = useRef<HTMLElement>(null)
   const { content, language } = useLanguage()
 
   const itemsPerPage = 4
   const totalCerts = content.achievements.certifications.length
+  const totalCourses = content.achievements.courses.length
   const maxIndex = Math.max(0, totalCerts - itemsPerPage)
+  const maxCoursesIndex = Math.max(0, totalCourses - itemsPerPage)
+
+  // Prevent body scroll when lightbox is open
+  useEffect(() => {
+    if (lightboxImage) {
+      document.body.style.overflow = 'hidden'
+      document.body.style.paddingRight = '15px' // Prevent layout shift
+    } else {
+      document.body.style.overflow = ''
+      document.body.style.paddingRight = ''
+    }
+    
+    return () => {
+      document.body.style.overflow = ''
+      document.body.style.paddingRight = ''
+    }
+  }, [lightboxImage])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,13 +56,28 @@ export default function Achievements() {
   }, [])
 
   const handleNext = () => {
-  setCurrentIndex((prev) => Math.min(maxIndex, prev + itemsPerPage))
-}
+    setCurrentIndex((prev) => Math.min(maxIndex, prev + itemsPerPage))
+  }
 
-const handlePrevious = () => {
-  setCurrentIndex((prev) => Math.max(0, prev - itemsPerPage))
-}
+  const handlePrevious = () => {
+    setCurrentIndex((prev) => Math.max(0, prev - itemsPerPage))
+  }
 
+  const handleCoursesNext = () => {
+    setCoursesCurrentIndex((prev) => Math.min(maxCoursesIndex, prev + itemsPerPage))
+  }
+
+  const handleCoursesPrevious = () => {
+    setCoursesCurrentIndex((prev) => Math.max(0, prev - itemsPerPage))
+  }
+
+  const openLightbox = (image: string, alt: string) => {
+    setLightboxImage({ src: image, alt })
+  }
+
+  const closeLightbox = () => {
+    setLightboxImage(null)
+  }
 
   return (
     <section id="achievements" ref={sectionRef} className="py-20 md:py-32 bg-background">
@@ -63,27 +98,22 @@ const handlePrevious = () => {
             return (
               <div
                 key={index}
-                className={`group relative overflow-hidden rounded-lg bg-card shadow-lg hover:shadow-2xl transition-all duration-100 cursor-pointer ${
+                className={`relative overflow-hidden rounded-lg bg-card shadow-lg cursor-pointer ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
-                onClick={() =>
-                  setLightboxImage({
-                    src: achievement.image || "/placeholder.svg",
-                    alt: achievement.title,
-                  })
-                }
+                onClick={() => openLightbox(achievement.image || "/placeholder.svg", achievement.title)}
               >
                 <div className="aspect-[3/4] overflow-hidden">
                   <img
                     src={achievement.image || "/placeholder.svg"}
                     alt={achievement.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/90 to-transparent" />
                 <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
-                  <div className="mb-4 transform group-hover:scale-110 transition-transform duration-100">
+                  <div className="mb-4">
                     <Icon className="h-10 w-10 text-primary" />
                   </div>
                   <h3 className="font-serif text-xl md:text-2xl font-bold mb-2">{achievement.title}</h3>
@@ -94,128 +124,238 @@ const handlePrevious = () => {
           })}
         </div>
 
-        <div
-          className={`transition-all duration-100 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
-        >
-          <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-16">
-            {content.achievements.certificationsTitle}
-          </h3>
-
-          <div className="relative">
-            {/* Navigation Arrows */}
+        {/* Tab Navigation */}
+        <div className="flex justify-center mb-12">
+          <div className="inline-flex bg-muted p-1 rounded-lg">
             <button
-              onClick={handlePrevious}
-              disabled={currentIndex === 0}
-              className={`absolute ${language === "ar" ? "right-0" : "left-0"} top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-100 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center`}
-              aria-label="Previous"
+              onClick={() => setActiveTab("certifications")}
+              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+                activeTab === "certifications"
+                  ? "bg-primary text-primary-foreground"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
             >
-              {language === "ar" ? <ChevronRight className="w-6 h-6" /> : <ChevronLeft className="w-6 h-6" />}
+              {content.achievements.certificationsTitle}
             </button>
-
             <button
-              onClick={handleNext}
-              disabled={currentIndex >= maxIndex}
-              className={`absolute ${language === "ar" ? "left-0" : "right-0"} top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-100 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center`}
-              aria-label="Next"
+              onClick={() => setActiveTab("courses")}
+              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+                activeTab === "courses"
+                  ? "bg-primary text-primary-foreground"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
             >
-              {language === "ar" ? <ChevronLeft className="w-6 h-6" /> : <ChevronRight className="w-6 h-6" />}
+              {content.achievements.coursesTitle}
             </button>
+          </div>
+        </div>
 
-            {/* Slider Container */}
-            <div className="overflow-hidden">
-              <div
-                className="flex transition-transform duration-100 ease-in-out gap-6"
-                style={{
-                  transform: `translateX(${language === "ar" ? "" : "-"}${currentIndex * (100 / itemsPerPage)}%)`,
-                }}
+        {/* Certifications Tab */}
+        {activeTab === "certifications" && (
+          <div
+            className={`transition-all duration-100 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          >
+            <div className="relative">
+              {/* Navigation Arrows */}
+              <button
+                onClick={handlePrevious}
+                disabled={currentIndex === 0}
+                className={`absolute ${language === "ar" ? "right-0" : "left-0"} top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-100 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center`}
+                aria-label="Previous"
               >
-                {content.achievements.certifications.map((cert, index) => (
-                  <div
-                    key={index}
-                    className="flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] group relative overflow-hidden rounded-lg bg-white shadow-md hover:shadow-2xl transition-all duration-100"
-                  >
-                    {/* Certificate Image */}
+                {language === "ar" ? <ChevronRight className="w-6 h-6" /> : <ChevronLeft className="w-6 h-6" />}
+              </button>
+
+              <button
+                onClick={handleNext}
+                disabled={currentIndex >= maxIndex}
+                className={`absolute ${language === "ar" ? "left-0" : "right-0"} top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-100 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center`}
+                aria-label="Next"
+              >
+                {language === "ar" ? <ChevronLeft className="w-6 h-6" /> : <ChevronRight className="w-6 h-6" />}
+              </button>
+
+              {/* Slider Container */}
+              <div className="overflow-hidden">
+                <div
+                  className="flex transition-transform duration-100 ease-in-out gap-6"
+                  style={{
+                    transform: `translateX(${language === "ar" ? "" : "-"}${currentIndex * (100 / itemsPerPage)}%)`,
+                  }}
+                >
+                  {content.achievements.certifications.map((cert, index) => (
                     <div
-                      className="aspect-[3/4] overflow-hidden bg-muted cursor-pointer"
-                      onClick={() =>
-                        setLightboxImage({
-                          src: cert.image || "/placeholder.svg?height=400&width=100",
-                          alt: cert.title,
-                        })
-                      }
+                      key={index}
+                      className="flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] relative overflow-hidden rounded-lg bg-white shadow-md"
                     >
-                      <img
-                        src={cert.image || "/placeholder.svg?height=400&width=100"}
-                        alt={cert.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      />
-                    </div>
-
-                    {/* Certificate Info Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-100" />
-
-                    {/* Certificate Details */}
-                    <div className="p-4 bg-white">
-                      <h4 className="font-serif text-lg font-bold text-foreground mb-2 line-clamp-2">{cert.title}</h4>
-                      <p className="text-sm text-muted-foreground mb-2">{cert.organization}</p>
-                      <div className="flex items-center justify-between">
-                        <div className="bg-primary/10 px-3 py-1.5 rounded-md">
-                          <p className="text-sm text-primary font-bold">{cert.date}</p>
-                        </div>
-                        {cert.score && (
-                          <span className="text-sm bg-primary text-primary-foreground px-3 py-1.5 rounded-md font-bold">
-                            {cert.score}
-                          </span>
-                        )}
+                      {/* Certificate Image */}
+                      <div
+                        className="aspect-[3/4] overflow-hidden bg-muted cursor-pointer"
+                        onClick={() => openLightbox(cert.image || "/placeholder.svg", cert.title)}
+                      >
+                        <img
+                          src={cert.image || "/placeholder.svg"}
+                          alt={cert.title}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                    </div>
 
-                    {/* Hover Details */}
-                    <div className="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-100 pointer-events-none">
-                      <div className="text-white">
-                        <h4 className="font-serif text-xl font-bold mb-2">{cert.title}</h4>
-                        <p className="text-sm text-white/90 mb-2">{cert.organization}</p>
-                        <div className="flex items-center gap-2">
-                          <div className="bg-primary px-3 py-1.5 rounded-md">
-                            <p className="text-base font-bold">{cert.date}</p>
+                      {/* Certificate Details */}
+                      <div className="p-4 bg-white">
+                        <h4 className="font-serif text-lg font-bold text-foreground mb-2 line-clamp-2">{cert.title}</h4>
+                        <p className="text-sm text-muted-foreground mb-2">{cert.organization}</p>
+                        <div className="flex items-center justify-between">
+                          <div className="bg-primary/10 px-3 py-1.5 rounded-md">
+                            <p className="text-sm text-primary font-bold">{cert.date}</p>
                           </div>
                           {cert.score && (
-                            <span className="text-sm bg-white text-primary px-3 py-1.5 rounded-md font-bold">
+                            <span className="text-sm bg-primary text-primary-foreground px-3 py-1.5 rounded-md font-bold">
                               {cert.score}
                             </span>
                           )}
                         </div>
                       </div>
                     </div>
-                  </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Pagination Dots */}
+              <div className="flex justify-center gap-2 mt-8">
+                {Array.from({ length: maxIndex + 1 }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentIndex(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-100 ${
+                      currentIndex === index ? "bg-primary w-8" : "bg-muted-foreground/30"
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
                 ))}
               </div>
             </div>
+          </div>
+        )}
 
-            {/* Pagination Dots */}
-            <div className="flex justify-center gap-2 mt-8">
-              {Array.from({ length: maxIndex + 1 }).map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all duration-100 ${
-                    currentIndex === index ? "bg-primary w-8" : "bg-muted-foreground/30"
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
+        {/* Courses Tab */}
+        {activeTab === "courses" && (
+          <div
+            className={`transition-all duration-100 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          >
+            <div className="relative">
+              {/* Navigation Arrows */}
+              <button
+                onClick={handleCoursesPrevious}
+                disabled={coursesCurrentIndex === 0}
+                className={`absolute ${language === "ar" ? "right-0" : "left-0"} top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-100 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center`}
+                aria-label="Previous"
+              >
+                {language === "ar" ? <ChevronRight className="w-6 h-6" /> : <ChevronLeft className="w-6 h-6" />}
+              </button>
+
+              <button
+                onClick={handleCoursesNext}
+                disabled={coursesCurrentIndex >= maxCoursesIndex}
+                className={`absolute ${language === "ar" ? "left-0" : "right-0"} top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-100 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center`}
+                aria-label="Next"
+              >
+                {language === "ar" ? <ChevronLeft className="w-6 h-6" /> : <ChevronRight className="w-6 h-6" />}
+              </button>
+
+              {/* Slider Container */}
+              <div className="overflow-hidden">
+                <div
+                  className="flex transition-transform duration-100 ease-in-out gap-6"
+                  style={{
+                    transform: `translateX(${language === "ar" ? "" : "-"}${coursesCurrentIndex * (100 / itemsPerPage)}%)`,
+                  }}
+                >
+                  {content.achievements.courses.map((course, index) => (
+                    <div
+                      key={index}
+                      className="flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] relative overflow-hidden rounded-lg bg-white shadow-md"
+                    >
+                      {/* Course Image */}
+                      <div
+                        className="aspect-[3/4] overflow-hidden bg-muted cursor-pointer"
+                        onClick={() => openLightbox(course.image || "/placeholder.svg", course.title)}
+                      >
+                        <img
+                          src={course.image || "/placeholder.svg"}
+                          alt={course.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+
+                      {/* Course Details */}
+                      <div className="p-4 bg-white">
+                        <div className="flex items-center mb-3">
+                         
+                          <h4 className="font-serif text-lg font-bold text-foreground line-clamp-2">{course.title}</h4>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{course.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Pagination Dots */}
+              <div className="flex justify-center gap-2 mt-8">
+                {Array.from({ length: maxCoursesIndex + 1 }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCoursesCurrentIndex(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-100 ${
+                      coursesCurrentIndex === index ? "bg-primary w-8" : "bg-muted-foreground/30"
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Custom Lightbox */}
+      {lightboxImage && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          onClick={closeLightbox}
+        >
+          <button
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 z-50 w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white transition-colors md:w-14 md:h-14"
+            aria-label="Close lightbox"
+          >
+            <X className="w-6 h-6 md:w-7 md:h-7" />
+          </button>
+          
+          <div 
+            className="relative w-full max-w-5xl mx-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-center bg-black/20 rounded-lg p-2 md:p-4">
+              <img
+                src={lightboxImage.src}
+                alt={lightboxImage.alt}
+                className="max-w-full max-h-[80vh] object-contain rounded"
+                onError={(e) => {
+                  // If image fails to load, show a placeholder
+                  const target = e.target as HTMLImageElement;
+                  target.src = "/placeholder.svg";
+                }}
+              />
+            </div>
+            
+            {/* Image title at the bottom */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
+              <h3 className="text-xl font-bold text-center">{lightboxImage.alt}</h3>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* ImageLightbox Component */}
-      <ImageLightbox
-        src={lightboxImage?.src || ""}
-        alt={lightboxImage?.alt || ""}
-        isOpen={!!lightboxImage}
-        onClose={() => setLightboxImage(null)}
-      />
+      )}
     </section>
   )
 }

@@ -2,6 +2,7 @@
   "en": {
     "siteInfo": {
       "profileImage": "/myphoto.jpg",
+      "navbarLogo": "/logo.jpg",
       "heroBackgroundImage": "/slider.png",
       "aboutImages": [
         "/pic1.jpg",
@@ -81,12 +82,12 @@
           "title": "Kazma Sporting Club",
           "period": "2006 - 2013",
           "description": "Handball goalkeeper from 2006 - 2013. Joined the under 14, under 16, and under 17 teams which won the third place in the Union Cup Championship, earning the bronze medal.",
-         "image": "/kazma2.jpg",
+         "image": "/kazma4.jpg",
           "gallery": [
-            "/kazma2.jpg",
+            "/kazma4.jpg",
             "/kazma1.jpg",
             "/kazma3.jpg",
-            "/kazma4.jpg"
+            "/kazma2.jpg"
           ],
           "details": [
             "Handball goalkeeper from 2006 - 2013",
@@ -116,41 +117,49 @@
           "title": "Arab Sports Club - Grass Football",
           "period": "2015 - 2019",
           "description": "Administrative of the grass football team for 4 years under the supervision of the experienced administrative director of the football sector, Khalid Al-Qabandi.",
-          "image": "/professional-football-team-training-session.jpg",
+           "image": "/arabi9.jpg",
           "gallery": [
-            "/professional-football-team-training-session.jpg",
-            "/football-team-match.jpg",
-            "/football-team-victory.jpg",
-            "/football-team-management.jpg"
-          ],
+            "/arabi9.jpg",
+            "/arabi4.jpg",
+            "/arabi5.jpg",
+            "/arabi6.jpg",
+            "/arabi7.jpg",
+            "/arabi8.jpg"
+            ],
           "details": [
             "Administrative for grass football team - 4 years",
             "Under supervision of Khalid Al-Qabandi",
             "Administrative for football juniors team born 2006-2007-2008",
             "Secured second place in Kazma League 2006 category",
             "First place Yarmouk Festival 2006 category",
-            "First place Yarmouk Festival 2007 category in 2017-2016"
+            "First place Yarmouk Festival 2007 category in 2017-2016",
+            "Administrative for the 13-year-old team for the 2004-2003 category",
+            "Securing second place in the league",
+            "Securing second place in the Sporty World Championship",
+            "Administrative for the 13-year-old team for the 2005-2004 category",
+            "Securing second place in the league",
+            "Securing third place in the Union Cup",
+            "Winner of the Best Administrative Award in the Sporty World Championship"
           ]
         },
+        
         {
-          "title": "Kazma SC - Under 13 Teams",
-          "period": "2003 - 2005",
-          "description": "Administrative for the 13-year-old teams with multiple championship achievements.",
-          "image": "/youth-football-team-trophy-celebration.jpg",
+          "title": "Arab Sports Club - U13",
+          "period": "2018 - 2019",
+          "description": "Administrative for the U-13 team, securing first place in Kuwait Football Federation Cup.",
+          "image": "/arabi10.jpg",
           "gallery": [
-            "/youth-football-team-trophy-celebration.jpg",
-            "/youth-football-training.jpg",
-            "/youth-football-match.jpg",
-            "/youth-football-award.jpg"
+            "/arabi10.jpg",
+            "/arabi11.jpg",
+            "/arabi12.jpg",
+            "/arabi13.jpg",
+            "/arabi14.jpg",
+            "/arabi15.jpg"
           ],
           "details": [
-            "Administrative for U-13 team 2004-2003 category",
-            "Secured second place in the league",
-            "Secured second place in Sporty World Championship",
-            "Administrative for U-13 team 2005-2004 category",
-            "Secured second place in the league",
-            "Secured third place in Union Cup",
-            "Winner of Best Administrative Award in Sporty World Championship"
+            "Administrative for U-13 team",
+            "Secured first place in Kuwaiti Football Federation Cup 2019-2020",
+            "Manager of Yellow team U-13 category 2006-2007", "Secured second place in the league"
           ]
         },
         {
@@ -168,37 +177,15 @@
             "Administrator for U-17 youth team 2002-2001 age group",
             "Appointed as administrator for 20-year-old youth team",
             "Administrator for first team for two matches in Federation Cup",
-            "Work period of 4 months only"
+            "Work period of 4 months only",
+             "Administrative for U-13 team 2004-2003 category",
+            "Secured second place in the league",
+            "Secured second place in Sporty World Championship",
+            "Administrative for U-13 team 2005-2004 category",
+            "Secured second place in the league",
+            "Secured third place in Union Cup",
+            "Winner of Best Administrative Award in Sporty World Championship"
           ]
-        },
-        {
-          "title": "Arab Sports Club - U13",
-          "period": "2018 - 2019",
-          "description": "Administrative for the U-13 team, securing first place in Kuwait Football Federation Cup.",
-          "image": "/youth-team-championship-celebration.jpg",
-          "gallery": [
-            "/youth-team-championship-celebration.jpg",
-            "/youth-team-training-session.jpg",
-            "/youth-team-match-action.jpg",
-            "/youth-team-award-ceremony.jpg"
-          ],
-          "details": [
-            "Administrative for U-13 team",
-            "Secured first place in Kuwaiti Football Federation Cup 2019-2020"
-          ]
-        },
-        {
-          "title": "Arab Sports Club - Yellow Team",
-          "period": "2006 - 2007",
-          "description": "Manager of the Yellow team for U-13 category, securing second place in the league.",
-          "image": "/youth-football-match-action.jpg",
-          "gallery": [
-            "/youth-football-match-action.jpg",
-            "/yellow-team-training.jpg",
-            "/yellow-team-celebration.jpg",
-            "/yellow-team-management.jpg"
-          ],
-          "details": ["Manager of Yellow team U-13 category 2006-2007", "Secured second place in the league"]
         },
         {
           "title": "General Authority for Applied Education",
@@ -227,7 +214,9 @@
             "Director of Beach Football at Ministry of Education 2021 season",
             "Participation in three tournaments",
             "Scout for School Union and Higher Education team 2022-2024",
-            "Manager of Kuwait School Union and Higher Education Futsal team 2023"
+            "Manager of Kuwait School Union and Higher Education Futsal team 2023",
+            " Participation in the MADCUP World Club Championship in Madrid, Spain for youth stages with the Spark national team",
+            "Signed with the Smart Mind Education Institute to attend an educational and recreational training camp with a group of students from middle and high school stages, consisting of educational and confidence-building programs, financial management, and life skills"
           ]
         },
         {
@@ -275,37 +264,6 @@
             "Born 2005 category",
             "Training camp in Qatar with national team"
           ]
-        },
-        {
-          "title": "Smart Mind Education Institute",
-          "period": "2020",
-          "description": "Signed educational and recreational training camp with comprehensive programs.",
-          "image": "/educational-sports-camp-activities.jpg",
-          "gallery": [
-            "/educational-sports-camp-activities.jpg",
-            "/educational-camp-training.jpg",
-            "/educational-camp-students.jpg",
-            "/educational-camp-programs.jpg"
-          ],
-          "details": [
-            "Educational and recreational training camp",
-            "Group of students from middle and high school",
-            "Educational and confidence-building programs",
-            "Financial management and life skills training"
-          ]
-        },
-        {
-          "title": "MADCUP World Championship",
-          "period": "2023",
-          "description": "Participation in MADCUP World Club Championship in Madrid, Spain for youth stages with Spark national team.",
-          "image": "/international-youth-tournament-madrid.jpg",
-          "gallery": [
-            "/international-youth-tournament-madrid.jpg",
-            "/madcup-spark-team.jpg",
-            "/madcup-training-session.jpg",
-            "/madcup-match-action.jpg"
-          ],
-          "details": ["MADCUP World Club Championship", "Madrid, Spain", "Youth stages with Spark national team"]
         },
         {
           "title": "Spark Sport Academy",
@@ -432,57 +390,54 @@
           "organization": "French Union of Legal Advisors",
           "date": "2023",
           "image": "/certificate-sports-contracts.jpg"
-        },
-        {
-          "title": "Sports Institutions Governance",
-          "organization": "Abdullah Al Salem Center for Leadership Development",
-          "date": "November 7-13, 2024",
-          "image": "/certificate-governance.jpg"
-        },
-        {
-          "title": "The Art of Public Speaking and Influence",
-          "organization": "Lecturer Eid Al-Rashidi",
-          "date": "October 28-29, 2024",
-          "image": "/certificate-public-speaking.jpg"
         }
       ],
       "coursesTitle": "Training Courses",
       "courses": [
         {
           "title": "Olympic Culture in Sports Institutions",
-          "description": "Comprehensive course on Olympic values and institutional culture"
+          "description": "Comprehensive course on Olympic values and institutional culture",
+          "image": "/course-olympic-culture.jpg"
         },
         {
           "title": "Psychological Motivation in Sports",
-          "description": "Sports psychology and athlete motivation techniques"
+          "description": "Sports psychology and athlete motivation techniques",
+          "image": "/course-psychological-motivation.jpg"
         },
         {
           "title": "Methods and Management of Player Injuries",
-          "description": "Professional injury management and prevention strategies"
+          "description": "Professional injury management and prevention strategies",
+          "image": "/course-player-injuries.jpg"
         },
         {
           "title": "Healthy Behaviors and Nutrition for Athletes",
-          "description": "Sports nutrition and healthy lifestyle management"
+          "description": "Sports nutrition and healthy lifestyle management",
+          "image": "/course-nutrition.jpg"
         },
         {
           "title": "Sports Psychology",
-          "description": "Advanced psychological training for sports professionals"
+          "description": "Advanced psychological training for sports professionals",
+          "image": "/course-sports-psychology.jpg"
         },
         {
           "title": "Professional Managers Course",
-          "description": "Kuwait Football Association professional management training"
+          "description": "Kuwait Football Association professional management training",
+          "image": "/course-professional-managers.jpg"
         },
         {
           "title": "Sports Contracts Experts Diploma",
-          "description": "Internationally accredited by French Union of Legal Advisors"
+          "description": "Internationally accredited by French Union of Legal Advisors",
+          "image": "/course-sports-contracts.jpg"
         },
         {
           "title": "Sports Institutions Governance",
-          "description": "Abdullah Al Salem Center - Al Khalidiya, November 7-13, 2024"
+          "description": "Abdullah Al Salem Center - Al Khalidiya, November 7-13, 2024",
+          "image": "/course-governance.jpg"
         },
         {
           "title": "The Art of Public Speaking and Influence",
-          "description": "Course Trainer: Lecturer Eid Al-Rashidi, October 28-29, 2024"
+          "description": "Course Trainer: Lecturer Eid Al-Rashidi, October 28-29, 2024",
+          "image": "/course-public-speaking.jpg"
         }
       ]
     },
@@ -518,6 +473,7 @@
   "ar": {
     "siteInfo": {
       "profileImage": "/myphoto.jpg",
+      "navbarLogo": "/logo.jpg",
       "heroBackgroundImage": "/slider.png",
       "aboutImages": [
         "/pic1.jpg",
@@ -597,12 +553,12 @@
           "title": "نادي كاظمة الرياضي",
           "period": "2006 - 2013",
           "description": "حارس كرة يد من سنة 2006 - 2013م. الانضمام لفريق تحت 14 سنة، 16 سنة، وتحت 17 سنة حاصل على المركز الثالث ببطولة كأس الاتحاد الميدالية البرونزية",
-          "image": "/kazma2.jpg",
+          "image": "/kazma4.jpg",
           "gallery": [
-            "/kazma2.jpg",
+            "/kazma4.jpg",
             "/kazma1.jpg",
             "/kazma3.jpg",
-            "/kazma4.jpg"
+            "/kazma2.jpg"
           ],
           "details": [
             "حارس كرة يد من سنة 2006 - 2013م",
@@ -632,34 +588,21 @@
           "title": "نادي العربي الرياضي - كرة قدم العشبي",
           "period": "2015 - 2019",
           "description": "إداري كرة قدم العشبي فريق لمدة 4 سنوات تحت إشراف الخبرة الإدارية مدير قطاع كرة القدم خالد القبندي",
-          "image": "/professional-football-team-training-session.jpg",
+          "image": "/arabi9.jpg",
           "gallery": [
-            "/professional-football-team-training-session.jpg",
-            "/football-team-match.jpg",
-            "/football-team-victory.jpg",
-            "/football-team-management.jpg"
-          ],
+            "/arabi9.jpg",
+            "/arabi4.jpg",
+            "/arabi5.jpg",
+            "/arabi6.jpg",
+            "/arabi7.jpg",
+            "/arabi8.jpg"
+]          ,
           "details": [
-            "إداري كرة قدم العشبي فريق لمدة 4 سنوات",
-            "تحت إشراف خالد القبندي",
+            "تحت إشراف خالد القبندي إداري كرة قدم العشبي لمدة 4 سنوات",
             "إداري براعم كرة القدم لمواليد 2006 - 2007 - 2008",
             "الحصول على المركز الثاني بدوري كاظمة لفئة 2006",
-            "موريان اليرموك المركز الأول فئة 2006",
-            "موريان اليرموك المركز الأول فئة 2007 سنة 2016 - 2017"
-          ]
-        },
-        {
-          "title": "نادي كاظمة - فرق تحت 13",
-          "period": "2003 - 2005",
-          "description": "إداري لفريق ال 13 سنة لفئة مع إنجازات بطولات متعددة",
-          "image": "/youth-football-team-trophy-celebration.jpg",
-          "gallery": [
-            "/youth-football-team-trophy-celebration.jpg",
-            "/youth-football-training.jpg",
-            "/youth-football-match.jpg",
-            "/youth-football-award.jpg"
-          ],
-          "details": [
+            "مهرجان اليرموك المركز الأول فئة 2006",
+            "مهرجان اليرموك المركز الأول فئة 2007 سنة 2016 - 2017",
             "إداري لفريق ال 13 سنة لفئة 2004-2003",
             "الحصول على المركز الثاني في الدوري",
             "المركز الثاني في بطولة سبورتي العالمية",
@@ -669,7 +612,28 @@
             "حاصل على جائزة أفضل إداري في بطولة سبورتي العالمية"
           ]
         },
+      
         {
+          "title": "نادي العربي الرياضي - تحت 13",
+          "period": "2018 - 2019",
+          "description": "إداري لفريق تحت ال 13 سنة، الحصول على المركز الأول لكأس الاتحاد الكويتي لكرة القدم",
+          "image": "/arabi10.jpg",
+          "gallery": [
+            "/arabi10.jpg",
+            "/arabi11.jpg",
+            "/arabi12.jpg",
+            "/arabi13.jpg",
+            "/arabi14.jpg",
+            "/arabi15.jpg"
+          ],
+          "details": [
+            "إداري لفريق تحت ال 13 سنة",
+            "الحصول على المركز الأول لكأس الاتحاد الكويتي لكرة القدم 2020 - 2019",
+            "مدير فريق الصفار تحت 13 سنة لفئة 2007 - 2006", "حاصل على المركز الثاني في الدوري"
+            
+          ]
+        },
+          {
           "title": "التضامن الرياضي",
           "period": "2018 - 2019",
           "description": "مدير فريق الناشئين تحت 17 ومباريات الفريق الأول في كأس الاتحاد",
@@ -688,35 +652,6 @@
           ]
         },
         {
-          "title": "نادي العربي الرياضي - تحت 13",
-          "period": "2018 - 2019",
-          "description": "إداري لفريق تحت ال 13 سنة، الحصول على المركز الأول لكأس الاتحاد الكويتي لكرة القدم",
-          "image": "/youth-team-championship-celebration.jpg",
-          "gallery": [
-            "/youth-team-championship-celebration.jpg",
-            "/youth-team-training-session.jpg",
-            "/youth-team-match-action.jpg",
-            "/youth-team-award-ceremony.jpg"
-          ],
-          "details": [
-            "إداري لفريق تحت ال 13 سنة",
-            "الحصول على المركز الأول لكأس الاتحاد الكويتي لكرة القدم 2020 - 2019"
-          ]
-        },
-        {
-          "title": "نادي العربي الرياضي - فريق الصفار",
-          "period": "2006 - 2007",
-          "description": "مدير فريق الصفار تحت 13 سنة لفئة، حاصل على المركز الثاني في الدوري",
-          "image": "/youth-football-match-action.jpg",
-          "gallery": [
-            "/youth-football-match-action.jpg",
-            "/yellow-team-training.jpg",
-            "/yellow-team-celebration.jpg",
-            "/yellow-team-management.jpg"
-          ],
-          "details": ["مدير فريق الصفار تحت 13 سنة لفئة 2007 - 2006", "حاصل على المركز الثاني في الدوري"]
-        },
-        {
           "title": "الهيئة العامة للتعليم التطبيقي",
           "period": "2018 - حتى الآن",
           "description": "إداري فريق كرة الصالات وكرة الشاطئ مع إنجازات بطولات متعددة",
@@ -729,19 +664,20 @@
             "/team-management-meeting.jpg"
           ],
           "details": [
-            "إداري فريق كرة الصالات",
-            "الحصول على المركز الأول في كأس الجامعات لكرة قدم الصالات",
-            "إداري لفرق منتخبات التطبيقي الفريق الأول لقدم الثلج والصالات",
-            "كشاف لاعبين طلاب الهيئة العامة للتعليم التطبيقي المنتخبات الجامعية للعام العام 2018",
-            "إدارة المنتخبات الجامعية لكرة قدم الصالات وكرة قدم العام العام 2018م",
-            "الحصول على المركز الثاني في بطولة الجامعات العربية المغلقة المقامة في أبو ظبي عام زايد تحت إشراف الدكتور حسين المكيمي الهيئة العامة للتعليم التطبيقي 2019",
-            "الحصول على المركز الأول في بطولة الخليج الرياضية الثامنة للجامعات ومؤسسات التعليم العالي بدول مجلس التعاون المقامة في الكويت لكرة قدم",
-            "مدير منتخب الاتحاد الكويتي المدرسي والتعليم العالي لكرة الصالات معسكر تدريبي 2020",
-            "مدير منتخب التعليم التطبيقي والتدريب 2022م",
-            "مدير كرة القدم الشاطئية في وزارة التربية موسم 2021 و المشاركة في ثلاث بطولات",
-            "كشاف لاعبين لاتحاد المدرسي والتعليم العالي 2024 - 2022",
-            "مدير فريق الاتحاد الكويتي المدرسي و التعليم العالي لكرة قدم الصالات 2023"
-          ]
+    "إداري فريق كرة الصالات",
+  "الحصول على المركز الأول في كأس الجامعات لكرة قدم الصالات",
+  "إداري لفرق منتخبات الهيئة العامة للتعليم التطبيقي (الفريق الأول لكرة القدم والصالات)",
+  "كشاف لاعبين من طلاب الهيئة العامة للتعليم التطبيقي لمنتخبات الجامعات لعام 2018",
+  "إدارة المنتخبات الجامعية لكرة قدم الصالات وكرة القدم لعام 2018م",
+  "الحصول على المركز الثاني في بطولة الجامعات العربية المغلقة المقامة في أبو ظبي (عام زايد) تحت إشراف الدكتور حسين المكيمي – الهيئة العامة للتعليم التطبيقي 2019",
+  "الحصول على المركز الأول في بطولة الخليج الرياضية الثامنة للجامعات ومؤسسات التعليم العالي بدول مجلس التعاون المقامة في الكويت لكرة القدم",
+  "مدير منتخب الاتحاد الكويتي المدرسي والتعليم العالي لكرة الصالات – معسكر تدريبي 2020",
+  "مدير منتخب التعليم التطبيقي والتدريب لعام 2022م",
+  "مدير كرة القدم الشاطئية في وزارة التربية لموسم 2021 والمشاركة في ثلاث بطولات",
+  "كشاف لاعبين للاتحاد المدرسي والتعليم العالي للأعوام 2022 – 2024",
+  "مدير فريق الاتحاد الكويتي المدرسي والتعليم العالي لكرة قدم الصالات لعام 2023",
+  "تم التوقيع مع معهد سمارت مايند التعليمي، والمشاركة في معسكر تربوي ترفيهي مع مجموعة من الطلبة والطالبات من المرحلتين المتوسطة والثانوية، تضمن برامج تربوية وتعليمية وتدريبية على النفس وإدارة المال وحكم حياتية"
+]
         },
         {
           "title": "إداري المنتخب الكويتي الأول لكرة القدم الشاطئية",
@@ -782,37 +718,7 @@
           ],
           "details": ["إداري منتخب الكويت للبراعم", "مواليد 2005", "معسكر قطر مع المنتخب الوطني"]
         },
-        {
-          "title": "معهد سمارت مايند التعليمي",
-          "period": "2020",
-          "description": "التوقيع مع معهد سمارت مايند التعليمي والدعاب الى معسكر تدريبي ترفيهي",
-          "image": "/educational-sports-camp-activities.jpg",
-          "gallery": [
-            "/educational-sports-camp-activities.jpg",
-            "/educational-camp-training.jpg",
-            "/educational-camp-students.jpg",
-            "/educational-camp-programs.jpg"
-          ],
-          "details": [
-            "معسكر تدريبي ترفيهي",
-            "مجموعة من الطلبة والطالبات من المرحلة المتوسطة والثانوية",
-            "يتكون من برامج التربوية وتعليمية",
-            "كيفية الثقة بالنفس وإدارة المال وتكط حياتية"
-          ]
-        },
-        {
-          "title": "المشاركة في بطولة العالم لفندقية MADCUP",
-          "period": "2023",
-          "description": "المشاركة في بطولة العالم لفندقية MADCUP في مدينة مدريد أسبانيا للمراحل السنية مع منتخب سبارك",
-          "image": "/international-youth-tournament-madrid.jpg",
-          "gallery": [
-            "/international-youth-tournament-madrid.jpg",
-            "/madcup-spark-team.jpg",
-            "/madcup-training-session.jpg",
-            "/madcup-match-action.jpg"
-          ],
-          "details": ["بطولة العالم لفندقية MADCUP", "مدريد، أسبانيا", "المراحل السنية مع منتخب سبارك"]
-        },
+       
         {
           "title": "أكاديمية سبارك سبورت",
           "period": "2021 - حتى الآن",
@@ -934,57 +840,54 @@
           "organization": "الاتحاد الفرنسي للمستشارين القانونيين",
           "date": "2023",
           "image": "/certificate-sports-contracts.jpg"
-        },
-        {
-          "title": "دورة حوكمة المؤسسات الرياضية",
-          "organization": "مركز عبد الله السالم لإعداد القادة - الخالدية",
-          "date": "من 07/11/2024 الى 13/11/2024",
-          "image": "/certificate-governance.jpg"
-        },
-        {
-          "title": "دورة فن الإلقاء والتأثير",
-          "organization": "مدرب الدورة المحاضر/ عيد الرشيدي",
-          "date": "2024 / 10 /28-29",
-          "image": "/certificate-public-speaking.jpg"
         }
       ],
       "coursesTitle": "الدورات التدريبية",
       "courses": [
         {
           "title": "دورة الثقافة الأولمبية في المؤسسات الرياضية",
-          "description": "دورة شاملة حول القيم الأولمبية والثقافة المؤسسية"
+          "description": "دورة شاملة حول القيم الأولمبية والثقافة المؤسسية",
+          "image": "/course-olympic-culture.jpg"
         },
         {
           "title": "دورة في التحفيز النفسي الرياضي",
-          "description": "علم النفس الرياضي وتقنيات تحفيز الرياضيين"
+          "description": "علم النفس الرياضي وتقنيات تحفيز الرياضيين",
+          "image": "/course-psychological-motivation.jpg"
         },
         {
           "title": "دورة طرق و إدارة مطش الإصابات للاعبين",
-          "description": "استراتيجيات إدارة الإصابات والوقاية المهنية"
+          "description": "استراتيجيات إدارة الإصابات والوقاية المهنية",
+          "image": "/course-player-injuries.jpg"
         },
         {
           "title": "دورة السلوكيات الصحية و الغذائية للرياضيين",
-          "description": "التغذية الرياضية وإدارة نمط الحياة الصحي"
+          "description": "التغذية الرياضية وإدارة نمط الحياة الصحي",
+          "image": "/course-nutrition.jpg"
         },
         {
           "title": "دورة علم النفس الرياضي",
-          "description": "التدريب النفسي المتقدم للمحترفين الرياضيين"
+          "description": "التدريب النفسي المتقدم للمحترفين الرياضيين",
+          "image": "/course-sports-psychology.jpg"
         },
         {
           "title": "دورة مدراء الاحتراف",
-          "description": "التدريب الإداري المهني في اتحاد الكويت لكرة القدم"
+          "description": "التدريب الإداري المهني في اتحاد الكويت لكرة القدم",
+          "image": "/course-professional-managers.jpg"
         },
         {
           "title": "دورة برنامج دبلوم خبراء العقود الرياضية",
-          "description": "شهادة معتمدة دولياً من الاتحاد الفرنسي للمستشارين القانونيين"
+          "description": "شهادة معتمدة دولياً من الاتحاد الفرنسي للمستشارين القانونيين",
+          "image": "/course-sports-contracts.jpg"
         },
         {
           "title": "دورة حوكمة المؤسسات الرياضية",
-          "description": "مركز عبد الله السالم لإعداد القادة - الخالدية من 07/11/2024 الى 13/11/2024"
+          "description": "مركز عبد الله السالم لإعداد القادة - الخالدية من 07/11/2024 الى 13/11/2024",
+          "image": "/course-governance.jpg"
         },
         {
           "title": "دورة فن الإلقاء والتأثير",
-          "description": "مدرب الدورة المحاضر/ عيد الرشيدي، 2024 / 10 /28-29"
+          "description": "مدرب الدورة المحاضر/ عيد الرشيدي، 2024 / 10 /28-29",
+          "image": "/course-public-speaking.jpg"
         }
       ]
     },

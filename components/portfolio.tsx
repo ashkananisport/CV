@@ -7,38 +7,18 @@ import ImageLightbox from "./image-lightbox"
 
 export default function Portfolio() {
   const [isVisible, setIsVisible] = useState(false)
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [activeTab, setActiveTab] = useState(0)
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
   const [lightboxImages, setLightboxImages] = useState<{ src: string; alt: string }[]>([])
   const [currentLightboxIndex, setCurrentLightboxIndex] = useState(0)
+  const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0)
   const sectionRef = useRef<HTMLElement>(null)
   const { content, language } = useLanguage()
 
-  // تحديد عدد العناصر المعروضة حسب حجم الشاشة
-  const getItemsPerPage = () => {
-    if (typeof window !== 'undefined') {
-      if (window.innerWidth < 640) return 1 // mobile
-      if (window.innerWidth < 1024) return 2 // tablet
-      return 3 // desktop
-    }
-    return 3 // default
-  }
-
-  const [itemsPerPage, setItemsPerPage] = useState(getItemsPerPage())
-  const totalItems = content.portfolio.items.length
-  const maxIndex = Math.max(0, totalItems - itemsPerPage)
-
+  // Reset gallery index when tab changes
   useEffect(() => {
-    const handleResize = () => {
-      const newItemsPerPage = getItemsPerPage()
-      setItemsPerPage(newItemsPerPage)
-      // إعادة تعيين الفهرس الحالي إذا تجاوز الحد الأقصى الجديد
-      setCurrentIndex(prev => Math.min(prev, Math.max(0, totalItems - newItemsPerPage)))
-    }
-
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [totalItems])
+    setCurrentGalleryIndex(0)
+  }, [activeTab])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -57,27 +37,30 @@ export default function Portfolio() {
     return () => observer.disconnect()
   }, [])
 
-  const handleNext = () => {
-    setCurrentIndex((prev) => Math.min(maxIndex, prev + 1))
-  }
-
-  const handlePrevious = () => {
-    setCurrentIndex((prev) => Math.max(0, prev - 1))
-  }
-
   const handleImageClick = (item: any) => {
-    // إذا كان للعنصر مجموعة صور، استخدمها، وإلا استخدم الصورة الأساسية
     if (item.gallery && item.gallery.length > 0) {
       const galleryImages = item.gallery.map((img: string) => ({ src: img, alt: item.title }))
       setLightboxImages(galleryImages)
-      setCurrentLightboxIndex(0)
-      setLightboxImage(galleryImages[0])
+      setCurrentLightboxIndex(currentGalleryIndex)
+      setLightboxImage(galleryImages[currentGalleryIndex])
     } else {
       const singleImage = { src: item.image || "/placeholder.svg", alt: item.title }
       setLightboxImages([singleImage])
       setCurrentLightboxIndex(0)
       setLightboxImage(singleImage)
     }
+  }
+
+  const handleGalleryNext = () => {
+    const activeItem = content.portfolio.items[activeTab]
+    const galleryLength = activeItem.gallery ? activeItem.gallery.length : 1
+    setCurrentGalleryIndex((prev) => (prev + 1) % galleryLength)
+  }
+
+  const handleGalleryPrev = () => {
+    const activeItem = content.portfolio.items[activeTab]
+    const galleryLength = activeItem.gallery ? activeItem.gallery.length : 1
+    setCurrentGalleryIndex((prev) => (prev - 1 + galleryLength) % galleryLength)
   }
 
   const handleLightboxNext = () => {
@@ -110,90 +93,128 @@ export default function Portfolio() {
           <div className="w-16 md:w-20 h-1 bg-primary mx-auto" />
         </div>
 
-        <div className="relative">
-          {/* Navigation Arrows */}
-          <button
-            onClick={handlePrevious}
-            disabled={currentIndex === 0}
-            className={`absolute ${language === "ar" ? "right-0" : "left-0"} top-1/2 -translate-y-1/2 -translate-x-2 sm:-translate-x-4 z-10 w-8 h-8 sm:w-10 sm:h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center`}
-            aria-label="Previous"
-          >
-            {language === "ar" ? <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6" /> : <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6" />}
-          </button>
-
-          <button
-            onClick={handleNext}
-            disabled={currentIndex >= maxIndex}
-            className={`absolute ${language === "ar" ? "left-0" : "right-0"} top-1/2 -translate-y-1/2 translate-x-2 sm:translate-x-4 z-10 w-8 h-8 sm:w-10 sm:h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center`}
-            aria-label="Next"
-          >
-            {language === "ar" ? <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6" /> : <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6" />}
-          </button>
-
-          {/* Slider Container */}
-          <div className="overflow-hidden">
-            <div
-              className="flex transition-transform duration-300 ease-in-out gap-3 sm:gap-6"
-              style={{
-                transform: `translateX(${language === "ar" ? "" : "-"}${currentIndex * (100 / itemsPerPage)}%)`,
-              }}
+        {/* Tabs Navigation */}
+        <div className="flex flex-wrap justify-center gap-2 mb-8 md:mb-12">
+          {content.portfolio.items.map((item, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveTab(index)}
+              className={`px-4 py-2 rounded-full text-sm md:text-base font-medium transition-all duration-300 ${
+                activeTab === index
+                  ? "bg-primary text-primary-foreground shadow-md"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              }`}
             >
-              {content.portfolio.items.map((item, index) => (
-                <div
-                  key={index}
-                  className={`flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group relative overflow-hidden rounded-lg bg-card shadow-lg hover:shadow-2xl transition-all duration-300 ${
-                    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                  }`}
-                  style={{ transitionDelay: `${index * 100}ms` }}
-                >
-                  <div
-                    className="aspect-[3/4] overflow-hidden cursor-pointer"
-                    onClick={() => handleImageClick(item)}
-                  >
-                    <img
-                      src={item.image || "/placeholder.svg"}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
-                    {/* إذا كان هناك معرض صور، أضف مؤشراً بذلك */}
-                    {item.gallery && item.gallery.length > 0 && (
-                      <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full">
-                        {item.gallery.length} {language === "ar" ? "صور" : "photos"}
-                      </div>
-                    )}
+              {item.title}
+            </button>
+          ))}
+        </div>
+
+        {/* Active Tab Content - Side by Side Layout */}
+        <div className="max-w-7xl mx-auto">
+          {content.portfolio.items.map((item, index) => (
+            <div
+              key={index}
+              className={`${activeTab === index ? "block" : "hidden"} transition-all duration-300`}
+            >
+              <div className="flex flex-col lg:flex-row gap-8">
+                {/* Details Section - Smaller */}
+                <div className="lg:w-2/5 bg-card p-6 md:p-8 rounded-xl shadow-lg">
+                  <div className="mb-6">
+                    <div className="bg-primary px-3 py-1.5 rounded-md inline-block mb-3">
+                      <p className="text-sm font-bold">{item.period}</p>
+                    </div>
+                    <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">{item.title}</h3>
+                    <p className="text-muted-foreground mb-6 text-lg">{item.description}</p>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-4 sm:translate-y-6 group-hover:translate-y-0 transition-transform duration-300">
-                  <div className="bg-primary px-3 py-1.5 rounded-md inline-block mb-3">
-                    <p className="text-xs sm:text-sm font-bold">{item.period}</p>
-                  </div>
-                  <h3 className="font-serif text-lg sm:text-xl md:text-2xl font-bold mb-2">{item.title}</h3>
-                  {item.details && Array.isArray(item.details) && (
-                    <ul className="text-xs sm:text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 list-disc pl-5 space-y-1">
-                      {item.details.map((point, i) => (
-                        <li key={i}>{point}</li>
+
+                  <div>
+                    <h4 className="font-bold text-lg md:text-xl mb-4">
+                      {language === "ar" ? "التفاصيل" : "Details"}
+                    </h4>
+                    <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2">
+                      {item.details && Array.isArray(item.details) && item.details.map((point, i) => (
+                        <div 
+                          key={i} 
+                          className="bg-muted/30 p-4 rounded-lg border border-border/50 hover:bg-muted/50 transition-all duration-200 hover:shadow-sm"
+                        >
+                          <div className="flex items-start">
+                            <span className="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span className="text-base">{point}</span>
+                          </div>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Image Gallery Slider - Enhanced */}
+                <div className="lg:w-3/5 bg-card p-6 rounded-xl shadow-lg flex flex-col">
+                  <div className="relative flex-grow">
+                    {/* Enhanced Image Container */}
+                    <div className="relative w-full h-full max-h-[500px] bg-gradient-to-br from-muted/20 to-muted/10 rounded-xl overflow-hidden shadow-inner">
+                      <div
+                        className="w-full h-full cursor-pointer transform transition-transform duration-300 hover:scale-[1.02]"
+                        onClick={() => handleImageClick(item)}
+                      >
+                        {item.gallery && item.gallery.length > 0 ? (
+                          <img
+                            src={item.gallery[currentGalleryIndex]}
+                            alt={`${item.title} ${currentGalleryIndex + 1}`}
+                            className="w-full h-full object-contain transition-opacity duration-300"
+                          />
+                        ) : (
+                          <img
+                            src={item.image || "/placeholder.svg"}
+                            alt={item.title}
+                            className="w-full h-full object-contain transition-opacity duration-300"
+                          />
+                        )}
+                      </div>
+
+                      {/* Enhanced Navigation Arrows */}
+                      {item.gallery && item.gallery.length > 1 && (
+                        <>
+                          <button
+                            onClick={handleGalleryPrev}
+                            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-black/60 backdrop-blur-sm text-white flex items-center justify-center hover:bg-black/80 transition-all duration-300 hover:scale-110 shadow-lg"
+                            aria-label="Previous image"
+                          >
+                            <ChevronLeft className="w-6 h-6" />
+                          </button>
+                          <button
+                            onClick={handleGalleryNext}
+                            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-black/60 backdrop-blur-sm text-white flex items-center justify-center hover:bg-black/80 transition-all duration-300 hover:scale-110 shadow-lg"
+                            aria-label="Next image"
+                          >
+                            <ChevronRight className="w-6 h-6" />
+                          </button>
+                        </>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Enhanced Thumbnail Preview */}
+                  {item.gallery && item.gallery.length > 1 && (
+                    <div className="flex justify-center mt-6 space-x-3">
+                      {item.gallery.map((_, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => setCurrentGalleryIndex(idx)}
+                          className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                            currentGalleryIndex === idx 
+                              ? "bg-primary scale-125 shadow-md" 
+                              : "bg-muted-foreground/40 hover:bg-muted-foreground/60"
+                          }`}
+                          aria-label={`Go to image ${idx + 1}`}
+                        />
+                      ))}
+                    </div>
                   )}
                 </div>
-                </div>
-              ))}
+              </div>
             </div>
-          </div>
-
-          {/* Pagination Dots */}
-          <div className="flex justify-center gap-1.5 sm:gap-2 mt-6 sm:mt-8">
-            {Array.from({ length: maxIndex + 1 }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all duration-300 ${
-                  currentIndex === index ? "bg-primary w-4 sm:w-8" : "bg-muted-foreground/30"
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
+          ))}
         </div>
       </div>
 
