@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Award, GraduationCap, Trophy, Users, ChevronLeft, ChevronRight, X, BookOpen } from "lucide-react"
+import { Award, GraduationCap, Trophy, Users, ChevronLeft, ChevronRight, X, BookOpen, Star } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import ImageLightbox from "./image-lightbox"
 
@@ -11,16 +11,19 @@ export default function Achievements() {
   const [isVisible, setIsVisible] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [coursesCurrentIndex, setCoursesCurrentIndex] = useState(0)
+  const [appreciationCurrentIndex, setAppreciationCurrentIndex] = useState(0)
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
-  const [activeTab, setActiveTab] = useState<"certifications" | "courses">("certifications")
+  const [activeTab, setActiveTab] = useState<"certifications" | "courses" | "appreciation">("certifications")
   const sectionRef = useRef<HTMLElement>(null)
   const { content, language } = useLanguage()
 
   const itemsPerPage = 4
   const totalCerts = content.achievements.certifications.length
   const totalCourses = content.achievements.courses.length
+  const totalAppreciation = content.achievements.appreciation ? content.achievements.appreciation.length : 0
   const maxIndex = Math.max(0, totalCerts - itemsPerPage)
   const maxCoursesIndex = Math.max(0, totalCourses - itemsPerPage)
+  const maxAppreciationIndex = Math.max(0, totalAppreciation - itemsPerPage)
 
   // Prevent body scroll when lightbox is open
   useEffect(() => {
@@ -69,6 +72,14 @@ export default function Achievements() {
 
   const handleCoursesPrevious = () => {
     setCoursesCurrentIndex((prev) => Math.max(0, prev - itemsPerPage))
+  }
+
+  const handleAppreciationNext = () => {
+    setAppreciationCurrentIndex((prev) => Math.min(maxAppreciationIndex, prev + itemsPerPage))
+  }
+
+  const handleAppreciationPrevious = () => {
+    setAppreciationCurrentIndex((prev) => Math.max(0, prev - itemsPerPage))
   }
 
   const openLightbox = (image: string, alt: string) => {
@@ -146,6 +157,16 @@ export default function Achievements() {
               }`}
             >
               {content.achievements.coursesTitle}
+            </button>
+            <button
+              onClick={() => setActiveTab("appreciation")}
+              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+                activeTab === "appreciation"
+                  ? "bg-primary text-primary-foreground"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {content.achievements.appreciationTitle || "شهادات التقدير"}
             </button>
           </div>
         </div>
@@ -290,7 +311,9 @@ export default function Achievements() {
                       {/* Course Details */}
                       <div className="p-4 bg-white">
                         <div className="flex items-center mb-3">
-                         
+                          <div className="bg-primary/10 p-2 rounded-lg mr-3">
+                            <BookOpen className="h-5 w-5 text-primary" />
+                          </div>
                           <h4 className="font-serif text-lg font-bold text-foreground line-clamp-2">{course.title}</h4>
                         </div>
                         <p className="text-sm text-muted-foreground">{course.description}</p>
@@ -308,6 +331,91 @@ export default function Achievements() {
                     onClick={() => setCoursesCurrentIndex(index)}
                     className={`w-2 h-2 rounded-full transition-all duration-100 ${
                       coursesCurrentIndex === index ? "bg-primary w-8" : "bg-muted-foreground/30"
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Appreciation Tab */}
+        {activeTab === "appreciation" && (
+          <div
+            className={`transition-all duration-100 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          >
+            <div className="relative">
+              {/* Navigation Arrows */}
+              <button
+                onClick={handleAppreciationPrevious}
+                disabled={appreciationCurrentIndex === 0}
+                className={`absolute ${language === "ar" ? "right-0" : "left-0"} top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-100 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center`}
+                aria-label="Previous"
+              >
+                {language === "ar" ? <ChevronRight className="w-6 h-6" /> : <ChevronLeft className="w-6 h-6" />}
+              </button>
+
+              <button
+                onClick={handleAppreciationNext}
+                disabled={appreciationCurrentIndex >= maxAppreciationIndex}
+                className={`absolute ${language === "ar" ? "left-0" : "right-0"} top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-100 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center`}
+                aria-label="Next"
+              >
+                {language === "ar" ? <ChevronLeft className="w-6 h-6" /> : <ChevronRight className="w-6 h-6" />}
+              </button>
+
+              {/* Slider Container */}
+              <div className="overflow-hidden">
+                <div
+                  className="flex transition-transform duration-100 ease-in-out gap-6"
+                  style={{
+                    transform: `translateX(${language === "ar" ? "" : "-"}${appreciationCurrentIndex * (100 / itemsPerPage)}%)`,
+                  }}
+                >
+                  {content.achievements.appreciation && content.achievements.appreciation.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] relative overflow-hidden rounded-lg bg-white shadow-md"
+                    >
+                      {/* Appreciation Image */}
+                      <div
+                        className="aspect-[3/4] overflow-hidden bg-muted cursor-pointer"
+                        onClick={() => openLightbox(item.image || "/placeholder.svg", item.title)}
+                      >
+                        <img
+                          src={item.image || "/placeholder.svg"}
+                          alt={item.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+
+                      {/* Appreciation Details */}
+                      <div className="p-4 bg-white">
+                        <div className="flex items-center mb-3">
+                          <div className="bg-primary/10 p-2 rounded-lg mr-3">
+                            <Star className="h-5 w-5 text-primary" />
+                          </div>
+                          <h4 className="font-serif text-lg font-bold text-foreground line-clamp-2">{item.title}</h4>
+                        </div>
+                        <p className="text-sm text-muted-foreground mb-2">{item.organization}</p>
+                        <div className="bg-primary/10 px-3 py-1.5 rounded-md inline-block">
+                          <p className="text-sm text-primary font-bold">{item.date}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Pagination Dots */}
+              <div className="flex justify-center gap-2 mt-8">
+                {Array.from({ length: maxAppreciationIndex + 1 }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setAppreciationCurrentIndex(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-100 ${
+                      appreciationCurrentIndex === index ? "bg-primary w-8" : "bg-muted-foreground/30"
                     }`}
                     aria-label={`Go to slide ${index + 1}`}
                   />

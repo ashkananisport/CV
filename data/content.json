@@ -438,8 +438,53 @@
           "title": "The Art of Public Speaking and Influence",
           "description": "Course Trainer: Lecturer Eid Al-Rashidi, October 28-29, 2024",
           "image": "/course-public-speaking.jpg"
+        },
+        {
+          "title": "Governance and Local Policies of Host Countries for Major Sporting Events",
+          "description": "Leaders Preparation Institute - Ministry of Sports, 30-09-2025",
+          "image": "/course-sports-governance.jpg"
         }
-      ]
+
+      ],
+       "appreciationTitle": "Appreciation Certificates",
+        "appreciation": [
+          {
+            "title": "Best Administrative Award",
+            "organization": "Kuwait Football Association",
+            "date": "2019",
+            "image": "/appreciation-best-admin.jpg"
+          },
+          {
+            "title": "Excellence in Sports Management",
+            "organization": "Arab Sports Club",
+            "date": "2020",
+            "image": "/appreciation-excellence.jpg"
+          },
+          {
+            "title": "Outstanding Contribution to Youth Development",
+            "organization": "General Authority for Applied Education",
+            "date": "2021",
+            "image": "/appreciation-youth-development.jpg"
+          },
+          {
+            "title": "Sports Leadership Recognition",
+            "organization": "Kuwait Olympic Committee",
+            "date": "2022",
+            "image": "/appreciation-leadership.jpg"
+          },
+          {
+            "title": "Innovation in Sports Education",
+            "organization": "Ministry of Education",
+            "date": "2023",
+            "image": "/appreciation-innovation.jpg"
+          },
+          {
+            "title": "Community Service Award",
+            "organization": "Sons of Kuwait Charitable Association",
+            "date": "2023",
+            "image": "/appreciation-community.jpg"
+          }
+        ]   
     },
     "contact": {
       "title": "Get In Touch",
@@ -888,8 +933,52 @@
           "title": "دورة فن الإلقاء والتأثير",
           "description": "مدرب الدورة المحاضر/ عيد الرشيدي، 2024 / 10 /28-29",
           "image": "/course-public-speaking.jpg"
+        },
+        {
+          "title": "الحوكمة والسياسات المحلية للدول المستضيفة للاحداث الرياضية الكبرى",
+          "description": "معهد اعداد القادة بوزارة الرياضة 30-9-2025",
+          "image": "/course-sports-governance.jpg"
         }
-      ]
+      ],
+       "appreciationTitle": "شهادات التقدير",
+        "appreciation": [
+          {
+            "title": "جائزة أفضل إداري",
+            "organization": "الاتحاد الكويتي لكرة القدم",
+            "date": "2019",
+            "image": "/appreciation-best-admin.jpg"
+          },
+          {
+            "title": "التميز في الإدارة الرياضية",
+            "organization": "النادي العربي الرياضي",
+            "date": "2020",
+            "image": "/appreciation-excellence.jpg"
+          },
+          {
+            "title": "مساهمة متميزة في تنمية الشباب",
+            "organization": "الهيئة العامة للتعليم التطبيقي",
+            "date": "2021",
+            "image": "/appreciation-youth-development.jpg"
+          },
+          {
+            "title": "اعتراف بالقيادة الرياضية",
+            "organization": "اللجنة الأولمبية الكويتية",
+            "date": "2022",
+            "image": "/appreciation-leadership.jpg"
+          },
+          {
+            "title": "الابتكار في التعليم الرياضي",
+            "organization": "وزارة التربية",
+            "date": "2023",
+            "image": "/appreciation-innovation.jpg"
+          },
+          {
+            "title": "جائزة خدمة المجتمع",
+            "organization": "جمعية أبناء الكويت الخيرية",
+            "date": "2023",
+            "image": "/appreciation-community.jpg"
+          }
+        ]
     },
     "contact": {
       "title": "تواصل معي",
