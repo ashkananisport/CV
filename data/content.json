@@ -317,79 +317,104 @@
           "organization": "Kuwait Football Association",
           "date": "2015",
           "score": "95%",
-          "image": "/certificate-level-one-admin.jpg"
+          "images": [
+            "/certificate-level-one-admin.jpg"          ]
         },
         {
           "title": "Level Two Administrative Certificate",
           "organization": "Kuwait Football Association",
           "date": "2017",
-          "image": "/certificate-level-two-admin.jpg"
+          "images": [
+            "/certificate-level-two-admin.jpg"          ]
         },
         {
           "title": "Level Three Managerial Certificate",
           "organization": "Kuwait Football Association",
           "date": "2018",
-          "image": "/certificate-level-three-manager.jpg"
+          "images": [
+            "/certificate-level-three-manager.jpg"
+                    ]
         },
         {
           "title": "Football Law & Arbitration Certificate",
           "organization": "Kuwait Football Association",
           "date": "2018",
-          "image": "/certificate-football-law.jpg"
+          "images": [
+            "/certificate-football-law.jpg"
+                    ]
         },
         {
           "title": "Sports Manager Level C - Second Batch",
           "organization": "Kuwait Football Association",
           "date": "2019",
-          "image": "/certificate-sports-manager-c.jpg"
+          "images": [
+            "/certificate-sports-manager-c.jpg"
+                    ]
         },
         {
           "title": "Sports Manager Level B",
           "organization": "Kuwait Football Association",
           "date": "2020",
-          "image": "/certificate-sports-manager-b.jpg"
+          "images": [
+            "/certificate-sports-manager-b.jpg"
+          ]
         },
         {
           "title": "Sports Manager Level A",
           "organization": "Kuwait Football Association",
           "date": "2022",
-          "image": "/certificate-sports-manager-a.jpg"
+          "images": [
+            "/certificate-sports-manager-a.jpg"
+          ]
         },
         {
           "title": "Level One Sports Injuries Certificate",
           "organization": "Kuwait Football Association",
           "date": "2022",
-          "image": "/certificate-sports-injuries.jpg"
+          "images": [
+            "/certificate-sports-injuries.jpg"
+          ]
         },
         {
           "title": "International Olympic Games Certificate",
           "organization": "Qatari Academy",
           "date": "2020",
-          "image": "/certificate-olympic-games.jpg"
+          "images": [
+            "/certificate-olympic-games.jpg"
+          ]
         },
         {
           "title": "Sports Rehabilitation & Injury Diagnosis",
           "organization": "Kuwait Ministry of Health - Dr. Mohammed Al-Dosari",
           "date": "2021",
-          "image": "/certificate-sports-rehab.jpg"
+          "images": [
+            "/certificate-sports-rehab.jpg"
+                    ]
         },
         {
           "title": "Sports Injuries Diploma",
           "organization": "Qatari Sports Academy",
           "date": "2021",
-          "image": "/certificate-injuries-diploma.jpg"
+          "images": [
+            "/certificate-injuries-diploma.jpg"
+          ]
         },
         {
           "title": "Sports Psychology",
           "organization": "International Institute",
           "date": "2019",
-          "image": "/certificate-sports-psychology.jpg"
+          "images": [
+            "/certificate-sports-psychology.jpg"
+          ]
         },
         {
           "title": "Sports Contracts Experts Diploma",
           "organization": "French Union of Legal Advisors",
           "date": "2023",
-          "image": "/certificate-sports-contracts.jpg"
+          "images": [
+            "/certificate-sports-contracts.jpg",
+            "/certificate-sports-contracts2.jpg"
+          ]
         }
       ],
       "coursesTitle": "Training Courses",
@@ -397,93 +422,119 @@
         {
           "title": "Olympic Culture in Sports Institutions",
           "description": "Comprehensive course on Olympic values and institutional culture",
-          "image": "/course-olympic-culture.jpg"
+          "images": [
+            "/course-olympic-culture.jpg"
+          ]
         },
         {
           "title": "Psychological Motivation in Sports",
           "description": "Sports psychology and athlete motivation techniques",
-          "image": "/course-psychological-motivation.jpg"
+          "images": [
+            "/course-psychological-motivation.jpg"
+          ]
         },
         {
           "title": "Methods and Management of Player Injuries",
           "description": "Professional injury management and prevention strategies",
-          "image": "/course-player-injuries.jpg"
+          "images": [
+            "/course-player-injuries.jpg"
+          ]
         },
         {
           "title": "Healthy Behaviors and Nutrition for Athletes",
           "description": "Sports nutrition and healthy lifestyle management",
-          "image": "/course-nutrition.jpg"
+          "images": [
+            "/course-nutrition.jpg"
+          ]
         },
         {
           "title": "Sports Psychology",
           "description": "Advanced psychological training for sports professionals",
-          "image": "/course-sports-psychology.jpg"
+          "images": [
+            "/course-sports-psychology.jpg"
+          ]
         },
         {
           "title": "Professional Managers Course",
           "description": "Kuwait Football Association professional management training",
-          "image": "/course-professional-managers.jpg"
-        },
-        {
-          "title": "Sports Contracts Experts Diploma",
-          "description": "Internationally accredited by French Union of Legal Advisors",
-          "image": "/course-sports-contracts.jpg"
+          "images": [
+            "/course-professional-managers.jpg"
+          ]
         },
         {
           "title": "Sports Institutions Governance",
           "description": "Abdullah Al Salem Center - Al Khalidiya, November 7-13, 2024",
-          "image": "/course-governance.jpg"
+          "images": [
+            "/course-governance.jpg"
+          ]
         },
         {
           "title": "The Art of Public Speaking and Influence",
           "description": "Course Trainer: Lecturer Eid Al-Rashidi, October 28-29, 2024",
-          "image": "/course-public-speaking.jpg"
+          "images": [
+            "/course-public-speaking.jpg"
+          ]
         },
         {
           "title": "Governance and Local Policies of Host Countries for Major Sporting Events",
           "description": "Leaders Preparation Institute - Ministry of Sports, 30-09-2025",
-          "image": "/course-sports-governance.jpg"
-        }
-
+          "images": [
+            "/course-sports-governance.jpg"
+          ]
+        },
+        {
+          "title": "Certified Trainers Program – Beta International",
+          "description": "Held from December 5 to 9, 2021, organized by Beta International as part of the Professional Trainers Qualification Program.",
+          "images": [
+            "/course-certified-trainers-beta.jpg",
+            "/course-certified-trainers-beta2.jpg"
+          ]
+        },
+        {
+          "title": "Workshop: Gamification in Education",
+          "description": "Attended a workshop titled 'Gamification in Education' organized by Makers Academy on Saturday, January 11, 2020. The workshop lasted 3 training hours under the supervision of trainer Mr. Saleh Al-Ajil.",
+          "images": [
+            "/workshop-gamification-in-education.jpg"
+          ]
+        },
+        {
+          "title": "Training Course: Educational and Training Games",
+          "description": "Attended a training course titled 'Educational and Training Games' organized by Al-Enma Company for Management Consultancy and Training on March 7, 2020. The course was delivered by Mr. Abdullah Adel Zakaria, a specialist in modern teaching methods.",
+          "images": [
+            "/training-educational-and-training-games.jpg"
+          ]
+        },
+        {
+        "title": "Training Course: Artificial Intelligence Applications in Sports",
+        "description": "Ahmed Ashkanani attended a training course titled “Artificial Intelligence Applications in Sports,” organized by the Leadership Development Institute, Ministry of Sport. The course was conducted remotely from September 17 to 18, 2025, with a total of 4 training hours.",
+        "images": [
+          "/ai-in-sports-training.jpg"
+        ]
+      }
       ],
        "appreciationTitle": "Appreciation Certificates",
         "appreciation": [
           {
-            "title": "Best Administrative Award",
-            "organization": "Kuwait Football Association",
-            "date": "2019",
-            "image": "/appreciation-best-admin.jpg"
+            "title": "Certificate of Appreciation: 8th GCC University and Higher Education Sports Tournament",
+            "description": "The Public Authority for Applied Education and Training extends its sincere thanks and appreciation to Captain Ahmed Jaber Mohammed Ashkanani (Team Administrator) for his active participation with the Authority’s team, achieving second place in the football championship, and his outstanding representation of the State of Kuwait in the 8th Sports Tournament for Universities and Higher Education Institutions in GCC countries, held from April 1 to 10, 2019, in the State of Kuwait.",
+            "organization": "Public Authority for Applied Education and Training",
+            "date": "April 1–10, 2019",
+            "images": [
+              "/gcc-university-sports-tournament-2019.jpg"
+            ]
           },
           {
-            "title": "Excellence in Sports Management",
-            "organization": "Arab Sports Club",
-            "date": "2020",
-            "image": "/appreciation-excellence.jpg"
-          },
-          {
-            "title": "Outstanding Contribution to Youth Development",
-            "organization": "General Authority for Applied Education",
-            "date": "2021",
-            "image": "/appreciation-youth-development.jpg"
-          },
-          {
-            "title": "Sports Leadership Recognition",
-            "organization": "Kuwait Olympic Committee",
-            "date": "2022",
-            "image": "/appreciation-leadership.jpg"
-          },
-          {
-            "title": "Innovation in Sports Education",
-            "organization": "Ministry of Education",
-            "date": "2023",
-            "image": "/appreciation-innovation.jpg"
-          },
-          {
-            "title": "Community Service Award",
-            "organization": "Sons of Kuwait Charitable Association",
-            "date": "2023",
-            "image": "/appreciation-community.jpg"
-          }
+          "title": "Certificate of Appreciation: First Sports Games",
+          "description": "The Public Authority for Applied Education and Training extends its sincere thanks and appreciation to Mr. Ahmed Jaber Ashkanani, Manager of the Futsal Team, for his participation in the First Sports Games organized by the Kuwait School and Higher Education Sports Federation, held from March 6 to March 30, 2022.",
+          "organization": "Public Authority for Applied Education and Training",
+          "date": "March 6–30, 2022",
+          "images": [
+            "/first-sports-games-2022.jpg"
+          ]
+        }
+
+
+
         ]   
     },
     "contact": {
@@ -808,83 +859,110 @@
       "certificationsTitle": "الشهادات المهنية",
       "certifications": [
         {
-          "title": "حاصل على شهادة المستوى الأول للإداري",
+          "title": "حاصل على شهادة المستوى الأول للإداريين",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2015",
           "score": "بدرجة 95٪",
-          "image": "/certificate-level-one-admin.jpg"
+          "images": [
+            "/certificate-level-one-admin.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة المستوى الثاني للإداريين",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2017",
-          "image": "/certificate-level-two-admin.jpg"
+          "images": [
+            "/certificate-level-two-admin.jpg"
+          ]
         },
         {
-          "title": "حاصل على شهادة المستوى الثالث للمدراء",
+          "title": "حاصل على شهادة المستوى الثالث للاداريين",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2018",
-          "image": "/certificate-level-three-manager.jpg"
+          "images": [
+            "/certificate-level-three-manager.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة قانون كرة القدم {التحكيم}",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2018",
-          "image": "/certificate-football-law.jpg"
+          "images": [
+            "/certificate-football-law.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة المدراء الرياضيين المستوى C الثاني على الدفعة",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2019",
-          "image": "/certificate-sports-manager-c.jpg"
+          "images": [
+            "/certificate-sports-manager-c.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة المدراء الرياضيين المستوى B",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2020",
-          "image": "/certificate-sports-manager-b.jpg"
+          "images": [
+            "/certificate-sports-manager-b.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة المدراء الرياضيين المستوى A",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2022",
-          "image": "/certificate-sports-manager-a.jpg"
+          "images": [
+            "/certificate-sports-manager-a.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة الإصابات الرياضية في الملعب المستوى الأول",
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2022",
-          "image": "/certificate-sports-injuries.jpg"
+          "images": [
+            "/certificate-sports-injuries.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة الملعاب الأولمبية العالمية",
           "organization": "أكاديمية القطرية",
           "date": "2020",
-          "image": "/certificate-olympic-games.jpg"
+          "images": [
+            "/certificate-olympic-games.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة الاستشفاء الرياضي و تشخيص الإصابات",
           "organization": "وزارة الصحة الكويتية - د. محمد الدوسري",
           "date": "2021",
-          "image": "/certificate-sports-rehab.jpg"
+          "images": [
+            "/certificate-sports-rehab.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة دبلوم إصابات الملعب",
           "organization": "الأكاديمية الرياضية القطرية",
           "date": "2021",
-          "image": "/certificate-injuries-diploma.jpg"
+          "images": [
+            "/certificate-injuries-diploma.jpg"
+          ]
         },
         {
           "title": "علم النفس الرياضي",
           "organization": "المعهد الدولي",
           "date": "2019",
-          "image": "/certificate-sports-psychology.jpg"
+          "images": [
+            "/certificate-sports-psychology.jpg"
+          ]
         },
         {
           "title": "دبلوم خبراء العقود الرياضية",
           "organization": "الاتحاد الفرنسي للمستشارين القانونيين",
           "date": "2023",
-          "image": "/certificate-sports-contracts.jpg"
+          "images": [
+            "/certificate-sports-contracts.jpg",
+            "/certificate-sports-contracts2.jpg"
+          ]
         }
       ],
       "coursesTitle": "الدورات التدريبية",
@@ -892,92 +970,119 @@
         {
           "title": "دورة الثقافة الأولمبية في المؤسسات الرياضية",
           "description": "دورة شاملة حول القيم الأولمبية والثقافة المؤسسية",
-          "image": "/course-olympic-culture.jpg"
+          "images": [
+            "/course-olympic-culture.jpg"
+          ]
         },
         {
           "title": "دورة في التحفيز النفسي الرياضي",
           "description": "علم النفس الرياضي وتقنيات تحفيز الرياضيين",
-          "image": "/course-psychological-motivation.jpg"
+          "images": [
+            "/course-psychological-motivation.jpg"
+          ]
         },
         {
-          "title": "دورة طرق و إدارة مطش الإصابات للاعبين",
+          "title": "دورة طرق و إدارة ملف الإصابات للاعبين",
           "description": "استراتيجيات إدارة الإصابات والوقاية المهنية",
-          "image": "/course-player-injuries.jpg"
+          "images": [
+            "/course-player-injuries.jpg"
+          ]
         },
         {
           "title": "دورة السلوكيات الصحية و الغذائية للرياضيين",
           "description": "التغذية الرياضية وإدارة نمط الحياة الصحي",
-          "image": "/course-nutrition.jpg"
+          "images": [
+            "/course-nutrition.jpg"
+          ]
         },
         {
           "title": "دورة علم النفس الرياضي",
           "description": "التدريب النفسي المتقدم للمحترفين الرياضيين",
-          "image": "/course-sports-psychology.jpg"
+          "images": [
+            "/course-sports-psychology.jpg"
+          ]
         },
         {
           "title": "دورة مدراء الاحتراف",
           "description": "التدريب الإداري المهني في اتحاد الكويت لكرة القدم",
-          "image": "/course-professional-managers.jpg"
-        },
-        {
-          "title": "دورة برنامج دبلوم خبراء العقود الرياضية",
-          "description": "شهادة معتمدة دولياً من الاتحاد الفرنسي للمستشارين القانونيين",
-          "image": "/course-sports-contracts.jpg"
+          "images": [
+            "/course-professional-managers.jpg"
+          ]
         },
         {
           "title": "دورة حوكمة المؤسسات الرياضية",
           "description": "مركز عبد الله السالم لإعداد القادة - الخالدية من 07/11/2024 الى 13/11/2024",
-          "image": "/course-governance.jpg"
+          "images": [
+            "/course-governance.jpg"
+          ]
         },
         {
           "title": "دورة فن الإلقاء والتأثير",
           "description": "مدرب الدورة المحاضر/ عيد الرشيدي، 2024 / 10 /28-29",
-          "image": "/course-public-speaking.jpg"
+          "images": [
+            "/course-public-speaking.jpg"
+          ]
         },
         {
           "title": "الحوكمة والسياسات المحلية للدول المستضيفة للاحداث الرياضية الكبرى",
           "description": "معهد اعداد القادة بوزارة الرياضة 30-9-2025",
-          "image": "/course-sports-governance.jpg"
+          "images": [
+            "/course-sports-governance.jpg"
+          ]
+        },
+        {
+          "title": "دورة تدريب المدربين المعتمدين من بيتا الدولية",
+          "description": "من 5 إلى 9 ديسمبر 2021 بتنظيم بيتا الدولية، ضمن برنامج تأهيل المدربين المحترفين.",
+          "images": [
+            "/course-certified-trainers-beta.jpg",
+            "/course-certified-trainers-beta2.jpg"
+          ]
+        },
+        {
+          "title": "ورشة عمل: التلعيب في التعليم",
+          "description": " ورشة عمل بعنوان «التلعيب في التعليم» بتنظيم Makers Academy يوم السبت 11 يناير 2020، لمدة 3 ساعات تدريبية، بإشراف المدرب أ. صالح العجيل.",
+          "images": [
+            "/workshop-gamification-in-education.jpg"
+          ]
+        },
+        {
+          "title": "دورة تدريبية: الألعاب التربوية والتدريبية",
+          "description": "شارك في دورة تدريبية بعنوان «الألعاب التربوية والتدريبية» بتنظيم شركة الإنماء للاستشارات الإدارية والتدريب، بتاريخ 7 مارس 2020، بإشراف المحاضر أ. عبدالله عادل زكريا، المتخصص في أساليب التعليم الحديثة.",
+          "images": [
+            "/training-educational-and-training-games.jpg"
+          ]
+        },
+        {
+          "title": "دورة تدريبية: توظيف الذكاء الاصطناعي في الرياضة",
+          "description": "حضر أحمد أشكناني دورة تدريبية بعنوان «توظيف الذكاء الاصطناعي في الرياضة» والتي نظمها معهد إعداد القادة بوزارة الرياضة، ونُفذت عن بُعد خلال الفترة من 17 إلى 18 سبتمبر 2025، بمعدل إجمالي 4 ساعات تدريبية.",
+          "images": [
+            "/ai-in-sports-training.jpg"
+          ]
         }
       ],
        "appreciationTitle": "شهادات التقدير",
         "appreciation": [
-          {
-            "title": "جائزة أفضل إداري",
-            "organization": "الاتحاد الكويتي لكرة القدم",
-            "date": "2019",
-            "image": "/appreciation-best-admin.jpg"
-          },
-          {
-            "title": "التميز في الإدارة الرياضية",
-            "organization": "النادي العربي الرياضي",
-            "date": "2020",
-            "image": "/appreciation-excellence.jpg"
-          },
-          {
-            "title": "مساهمة متميزة في تنمية الشباب",
-            "organization": "الهيئة العامة للتعليم التطبيقي",
-            "date": "2021",
-            "image": "/appreciation-youth-development.jpg"
-          },
-          {
-            "title": "اعتراف بالقيادة الرياضية",
-            "organization": "اللجنة الأولمبية الكويتية",
-            "date": "2022",
-            "image": "/appreciation-leadership.jpg"
-          },
-          {
-            "title": "الابتكار في التعليم الرياضي",
-            "organization": "وزارة التربية",
-            "date": "2023",
-            "image": "/appreciation-innovation.jpg"
-          },
-          {
-            "title": "جائزة خدمة المجتمع",
-            "organization": "جمعية أبناء الكويت الخيرية",
-            "date": "2023",
-            "image": "/appreciation-community.jpg"
+         {
+            "title": "شهادة تقدير: الدورة الرياضية الثامنة للجامعات ومؤسسات التعليم العالي بدول مجلس التعاون",
+            "description": "تتقدم الهيئة العامة للتعليم التطبيقي والتدريب بخالص الشكر والتقدير إلى الكابتن أحمد جابر محمد أشكناني (إداري الفريق) على مشاركته الفعالة بمنتخب الهيئة العامة للتعليم التطبيقي والتدريب وإحرازه المركز الثاني في بطولة كرة القدم وتمثيله المتميز لدولة الكويت في الدورة الرياضية الثامنة للجامعات ومؤسسات التعليم العالي بدول مجلس التعاون لدول الخليج العربية، المقامة خلال الفترة من 1 إلى 10 أبريل 2019 في دولة الكويت.",
+            "organization": "الهيئة العامة للتعليم التطبيقي والتدريب",
+            "date": "1–10 أبريل 2019",
+            "images": [
+              "/gcc-university-sports-tournament-2019.jpg"
+            ]
           }
+        ,
+          {
+            "title": "شهادة شكر وتقدير: دورة الألعاب الرياضية الأولى",
+            "description": "تتقدم الهيئة العامة للتعليم التطبيقي والتدريب بخالص الشكر والتقدير إلى السيد أحمد جابر أشكناني، مدير فريق كرة قدم الصالات، لمشاركته في دورة الألعاب الرياضية الأولى للاتحاد الكويتي الرياضي المدرسي والتعليم العالي، والتي أقيمت في الفترة من 6 مارس 2022 حتى 30 مارس 2022.",
+            "organization": "الهيئة العامة للتعليم التطبيقي والتدريب",
+            "date": "6–30 مارس 2022",
+            "images": [
+              "/first-sports-games-2022.jpg"
+            ]
+          }
+
+          
         ]
     },
     "contact": {
