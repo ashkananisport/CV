@@ -152,7 +152,7 @@ export default function Contact() {
                 <img
                   src={content.siteInfo.contactOfficeImage || "/placeholder.svg"}
                   alt="Ahmad Ashkanani Office"
-                  className="w-full  object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </button>
             </div>
@@ -240,27 +240,66 @@ export default function Contact() {
           </div>
 
           <div className="mt-20 pt-8 border-t border-border">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p className="text-foreground/60 text-xs sm:text-sm text-center sm:text-left">{content.contact.footer}</p>
-              <div className="flex gap-4">
-                <a
-                  href={content.socialMedia.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground/60 hover:text-primary transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="h-5 w-5" />
-                </a>
-                <a
-                  href={content.socialMedia.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground/60 hover:text-primary transition-colors"
-                  aria-label="Twitter/X"
-                >
-                  <XIcon className="h-5 w-5" />
-                </a>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+              <p className="text-foreground/60 text-xs sm:text-sm text-center md:text-left">{content.contact.footer}</p>
+              
+              <div className="flex flex-col sm:flex-row items-center gap-6">
+                <div className="flex gap-4">
+                  <a
+                    href={content.socialMedia.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/60 hover:text-primary transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <Instagram className="h-5 w-5" />
+                  </a>
+                  <a
+                    href={content.socialMedia.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/60 hover:text-primary transition-colors"
+                    aria-label="Twitter/X"
+                  >
+                    <XIcon className="h-5 w-5" />
+                  </a>
+                </div>
+                
+                <div className="flex items-center gap-4">
+                  {/* Ashkanani Company Logo */}
+                  <a
+                    href="https://ashknanisport2025.vercel.app/" // رابط موقع شركة أشكناني
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                    aria-label="Ashkanani Company"
+                  >
+                    <div className="bg-white rounded-md p-1">
+                      <img 
+                        src="/ashkanani-logo.png" // مسار شعار شركة أشكناني
+                        alt="Ashkanani Company" 
+                        className="h-8 w-auto"
+                      />
+                    </div>
+                  </a>
+                  
+                  {/* Spark Sport Academy Logo */}
+                  <a
+                    href="https://sparksport.com" // رابط موقع أكاديمية سبارك
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                    aria-label="Spark Sport Academy"
+                  >
+                    <div className="bg-white rounded-md p-1">
+                      <img 
+                        src="/spark-logo.jpg" // مسار شعار أكاديمية سبارك
+                        alt="Spark Sport Academy" 
+                        className="h-8 w-auto"
+                      />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
