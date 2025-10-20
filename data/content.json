@@ -20,6 +20,7 @@
       "home": "Home",
       "about": "About",
       "portfolio": "Portfolio",
+      "gallery": "Gallery",
       "achievements": "Achievements",
       "contact": "Contact"
     },
@@ -40,6 +41,7 @@
           "title": "Current Positions",
           "icon": "Briefcase",
           "items": [
+            "Head of the Sports Media Department, Dasman News Network",
             "A professor at the Ministry of Education in the secondary stage - Fine Arts Education.",
             "Owner of Spark Sport Academy.",
             "Director of the national teams at the General Authority for Applied Education and Training for futsal and grass football.",
@@ -166,12 +168,12 @@
           "title": "Sports Solidarity",
           "period": "2018 - 2019",
           "description": "Administrator for the under-17 youth team and first team matches in Federation Cup.",
-          "image": "/sports-solidarity-team-action.jpg",
+          "image": "/sports-solidarity-team-action2.jpg",
           "gallery": [
-            "/sports-solidarity-team-action.jpg",
-            "/sports-solidarity-training.jpg",
-            "/sports-solidarity-match.jpg",
-            "/sports-solidarity-meeting.jpg"
+            "sports-solidarity-team-action2.jpg",
+            "sports-solidarity-team-action3.jpg"
+
+
           ],
           "details": [
             "Administrator for U-17 youth team 2002-2001 age group",
@@ -191,13 +193,10 @@
           "title": "General Authority for Applied Education",
           "period": "2018 - Present",
           "description": "Administrative manager of futsal and beach football teams with multiple championship achievements.",
-          "image": "/beach-football-match-at-sunset.jpg",
+          "image": "/Applied-Education1.jpg",
           "gallery": [
-            "/beach-football-match-at-sunset.jpg",
-            "/futsal-team-training.jpg",
-            "/beach-football-trophy.jpg",
-            "/futsal-team-celebration.jpg",
-            "/team-management-meeting.jpg"
+            "/Applied-Education1.jpg",
+            "/Applied-Education2.jpg"
           ],
           "details": [
             "Administrative manager of futsal team",
@@ -223,12 +222,13 @@
           "title": "Kuwait National Beach Soccer Team",
           "period": "2022 - 2023",
           "description": "Administrative manager of the Kuwaiti national beach soccer team.",
-          "image": "/national-football-team-lineup.jpg",
+          "image": "/national-football-team-lineup0.jpg",
           "gallery": [
-            "/national-football-team-lineup.jpg",
-            "/beach-soccer-team-training.jpg",
-            "/beach-soccer-match-action.jpg",
-            "/beach-soccer-team-management.jpg"
+            "national-football-team-lineup0.jpg",
+            "/national-football-team-lineup1.jpg",
+            "/national-football-team-lineup2.jpg",
+            "/national-football-team-lineup3.jpg",
+            "/national-football-team-lineup4.jpg"
           ],
           "details": [
             "Administrative manager of Kuwait national beach soccer team",
@@ -238,7 +238,7 @@
         {
           "title": "Gulf Cup 26 Championship",
           "period": "2024 - 2025",
-          "description": "Chairman of the Organizing Committee for the Gulf Cup Championship in Kuwait (Gulf 26).",
+          "description": "Chairman of one of the Organizing Committee for the Gulf Cup Championship in Kuwait (Gulf 26).",
           "image": "/gulf-cup-football-championship-stadium.jpg",
           "gallery": [
             "/gulf-cup-football-championship-stadium.jpg",
@@ -246,18 +246,17 @@
             "/gulf-cup-meeting.jpg",
             "/gulf-cup-preparation.jpg"
           ],
-          "details": ["Chairman of Organizing Committee", "Gulf Cup Championship in Kuwait", "Gulf 26 - 2024-2025"]
+          "details": ["Chairman one of the Organizing Committee", "Gulf Cup Championship in Kuwait", "Gulf 26 - 2024-2025"]
         },
         {
           "title": "Kuwait U-16 National Team",
           "period": "2017 - 2018",
           "description": "Administrator of Kuwait Under-16 national team with training camp in Qatar.",
-          "image": "/youth-national-team-training.jpg",
+          "image": "/youth-national-team-training1.jpg",
           "gallery": [
-            "/youth-national-team-training.jpg",
-            "/youth-national-team-qatar-camp.jpg",
-            "/youth-national-team-match.jpg",
-            "/youth-national-team-meeting.jpg"
+            "/youth-national-team-training1.jpg",
+            "/youth-national-team-training2.jpg"
+         
           ],
           "details": [
             "Administrator of Kuwait U-16 national team",
@@ -271,11 +270,8 @@
           "description": "Founder and director of comprehensive sports training academy.",
           "image": "/modern-sports-academy-training-facility.jpg",
           "gallery": [
-            "/modern-sports-academy-training-facility.jpg",
-            "/spark-academy-training.jpg",
-            "/spark-academy-students.jpg",
-            "/spark-academy-programs.jpg",
-            "/spark-academy-facility.jpg"
+            "/modern-sports-academy-training-facility1.jpg",
+            "/modern-sports-academy-training-2.jpg"
           ],
           "details": [
             "Founder and Owner",
@@ -286,6 +282,117 @@
         }
       ]
     },
+     "media": {
+    "title": "Media Gallery",
+    "galleryTitle": "Photo Gallery",
+    "videosTitle": "Video Interviews",
+    "galleryDescription": "A collection of memorable moments from my professional journey",
+    "videosDescription": "Television and media interviews featuring my insights and experiences",
+    "gallery": [
+  {
+    "id": 1,
+    "title": "FIFA",
+    "description": "FIFA Licensed Players’ Agent",
+    "src": "/fifa.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Ashkanani Championship",
+    "description": "Founder of the First Ashkanani Ramadan Championship 2024",
+    "src": "/ashknani-comp.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Lecturer",
+    "description": "Internationally Certified Trainer and Lecturer in Educational and Sports Management",
+    "src": "/lec.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Lecturer at Kuwait Football Association",
+    "description": "Lecturer at the Kuwait Football Association",
+    "src": "/lec-kw.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Delivering a Lecture at the Association",
+    "description": "Delivered a lecture at the Kuwait Football Association",
+    "src": "/lec-kw2.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Lecture at Kuwait University",
+    "description": "Delivered a lecture at Kuwait University",
+    "src": "/lec-kw-un.jpg"
+  }
+ ],
+     "videos": [
+      {
+        "id": 1,
+        "title": "Podcast 2025",
+        "description": "A comprehensive podcast discussing the latest developments in sports management and my professional journey",
+        "url": "https://www.youtube.com/watch?v=Aeqkwqx_YpY",
+        "date": "2025"
+      },
+      {
+        "id": 2,
+        "title": "Episode at the Center 2025",
+        "description": "Special episode recorded at the center, focusing on sports education and training methodologies",
+        "url": "https://www.youtube.com/watch?v=M_8fWkVwe9A",
+        "date": "2025"
+      },
+      {
+        "id": 3,
+        "title": "Sports Management Insights",
+        "description": "Sharing valuable insights on effective sports management strategies and leadership principles",
+        "url": "https://www.youtube.com/watch?v=VBTDTDIvzBQ",
+        "date": "2025"
+      },
+      {
+        "id": 4,
+        "title": "Athlete Development Program",
+        "description": "Discussing comprehensive approaches to athlete development and talent identification",
+        "url": "https://www.youtube.com/watch?v=2cbHrcGPH64",
+        "date": "2025"
+      },
+      {
+        "id": 5,
+        "title": "Sports Psychology in Action",
+        "description": "Practical applications of sports psychology techniques for enhancing athletic performance",
+        "url": "https://www.youtube.com/watch?v=EchwFvsSFu0",
+        "date": "2024"
+      },
+      {
+        "id": 6,
+        "title": "Future of Sports Education",
+        "description": "Exploring innovative approaches and future trends in sports education and training",
+        "url": "https://www.youtube.com/watch?v=t5L2UWmwpu8",
+        "date": "2024"
+      },
+      {
+        "id": 7,
+        "title": "Gulf Cup 26 Behind the Scenes",
+        "description": "Exclusive behind-the-scenes look at the organization and management of Gulf Cup 26",
+        "url": "https://www.youtube.com/watch?v=_EJloO8dduc",
+        "date": "2023"
+      },
+      {
+        "id": 8,
+        "title": "Sports Law and Regulations",
+        "description": "Detailed discussion on sports law, regulations, and their impact on modern sports management",
+        "url": "https://www.youtube.com/watch?v=YV3eN-Ocg3A",
+        "date": "2022"
+      },
+      {
+        "id": 9,
+        "title": "Building Successful Sports Academies",
+        "description": "Key principles and strategies for establishing and managing successful sports academies",
+        "url": "https://www.youtube.com/watch?v=ttq9mblsA_k",
+        "date": "2021"
+      }
+    ]
+  },
+  
     "achievements": {
       "title": "Achievements & Credentials",
       "featured": [
@@ -301,13 +408,13 @@
         },
         {
           "title": "Gulf Cup 26 Chairman",
-          "description": "Leading the organizing committee for Kuwait 2024-2025",
+          "description": "Leading one of the organizing committee for Kuwait 2024-2025",
           "image": "/gulf-cup-trophy-presentation.jpg"
         },
         {
           "title": "166+ Athletes Managed",
           "description": "Successfully representing male and female athletes across multiple sports",
-          "image": "/sports-team-group-photo-celebration.jpg"
+          "image": "/166.jpeg"
         }
       ],
       "certificationsTitle": "Professional Certifications",
@@ -412,6 +519,7 @@
           "organization": "French Union of Legal Advisors",
           "date": "2023",
           "images": [
+            "/certificate-sports-contracts3.jpg",
             "/certificate-sports-contracts.jpg",
             "/certificate-sports-contracts2.jpg"
           ]
@@ -587,6 +695,7 @@
       "home": "الرئيسية",
       "about": "عني",
       "portfolio": "الأعمال",
+      "gallery": "المعرض",
       "achievements": "الإنجازات",
       "contact": "تواصل"
     },
@@ -607,6 +716,7 @@
           "title": "المناصب الحالية",
           "icon": "Briefcase",
           "items": [
+            "رئيس قسم الإعلام الرياضي شبكة دسمان نيوز الاعلامية",
             "أستاذ في وزارة التربية في مرحلة الثانوية - التربية الفنية",
             "صاحب أكاديمية سبارك سبورت",
             "مدير منتخبات الهيئة العامة للتعليم التطبيقي و التدريب لكرة قدم الصالات و العشبي",
@@ -733,12 +843,10 @@
           "title": "التضامن الرياضي",
           "period": "2018 - 2019",
           "description": "مدير فريق الناشئين تحت 17 ومباريات الفريق الأول في كأس الاتحاد",
-          "image": "/sports-solidarity-team-action.jpg",
+          "image": "/sports-solidarity-team-action2.jpg",
           "gallery": [
-            "/sports-solidarity-team-action.jpg",
-            "/sports-solidarity-training.jpg",
-            "/sports-solidarity-match.jpg",
-            "/sports-solidarity-meeting.jpg"
+            "sports-solidarity-team-action2.jpg",
+            "sports-solidarity-team-action3.jpg"
           ],
           "details": [
             "مدير فريق الناشئين تحت 17 سنة لفئة 2002-2001",
@@ -751,13 +859,11 @@
           "title": "الهيئة العامة للتعليم التطبيقي",
           "period": "2018 - حتى الآن",
           "description": "إداري فريق كرة الصالات وكرة الشاطئ مع إنجازات بطولات متعددة",
-          "image": "/beach-football-match-at-sunset.jpg",
+          "image": "/Applied-Education1.jpg",
           "gallery": [
-            "/beach-football-match-at-sunset.jpg",
-            "/futsal-team-training.jpg",
-            "/beach-football-trophy.jpg",
-            "/futsal-team-celebration.jpg",
-            "/team-management-meeting.jpg"
+            "/Applied-Education1.jpg",
+            "/Applied-Education2.jpg"
+           
           ],
           "details": [
     "إداري فريق كرة الصالات",
@@ -779,17 +885,18 @@
           "title": "إداري المنتخب الكويتي الأول لكرة القدم الشاطئية",
           "period": "2022 - 2023",
           "description": "إداري المنتخب الكويتي الأول لكرة القدم الشاطئية",
-          "image": "/national-football-team-lineup.jpg",
+          "image": "/national-football-team-lineup0.jpg",
           "gallery": [
-            "/national-football-team-lineup.jpg",
-            "/beach-soccer-team-training.jpg",
-            "/beach-soccer-match-action.jpg",
-            "/beach-soccer-team-management.jpg"
+            "national-football-team-lineup0.jpg",
+            "/national-football-team-lineup1.jpg",
+            "/national-football-team-lineup2.jpg",
+            "/national-football-team-lineup3.jpg",
+            "/national-football-team-lineup4.jpg"
           ],
           "details": ["إداري المنتخب الكويتي الأول لكرة القدم الشاطئية", "تمثيل المسابقات الدولية"]
         },
         {
-          "title": "رئيس لجنة تنظيم بطولة كأس الخليج في الكويت",
+          "title": "رئيس أحد اللجان التنظيم بطولة كأس الخليج في الكويت",
           "period": "2024 - 2025",
           "description": "رئيس لجنة تنظيم بطولة كأس الخليج في الكويت (خليجي 26)",
           "image": "/gulf-cup-football-championship-stadium.jpg",
@@ -799,18 +906,17 @@
             "/gulf-cup-meeting.jpg",
             "/gulf-cup-preparation.jpg"
           ],
-          "details": ["رئيس لجنة تنظيم", "بطولة كأس الخليج في الكويت", "خليجي 26 - 2025-2024"]
+          "details": ["رئيس أحد لجان التنظيم", "بطولة كأس الخليج في الكويت", "خليجي 26 - 2025-2024"]
         },
         {
           "title": "إداري منتخب الكويت للبراعم",
           "period": "2017 - 2018",
           "description": "إداري منتخب الكويت للبراعم مواليد 2005 مع معسكر قطر مع المنتخب الوطني",
-          "image": "/youth-national-team-training.jpg",
+          "image": "/youth-national-team-training1.jpg",
           "gallery": [
-            "/youth-national-team-training.jpg",
-            "/youth-national-team-qatar-camp.jpg",
-            "/youth-national-team-match.jpg",
-            "/youth-national-team-meeting.jpg"
+            "/youth-national-team-training1.jpg",
+            "/youth-national-team-training2.jpg"
+           
           ],
           "details": ["إداري منتخب الكويت للبراعم", "مواليد 2005", "معسكر قطر مع المنتخب الوطني"]
         },
@@ -819,15 +925,122 @@
           "title": "أكاديمية سبارك سبورت",
           "period": "2021 - حتى الآن",
           "description": "مؤسس ومدير أكاديمية تدريب رياضي شاملة",
-          "image": "/modern-sports-academy-training-facility.jpg",
+          "image": "/modern-sports-academy-training-facility1.jpg",
           "gallery": [
-            "/modern-sports-academy-training-facility.jpg",
-            "/spark-academy-training.jpg",
-            "/spark-academy-students.jpg",
-            "/spark-academy-programs.jpg",
-            "/spark-academy-facility.jpg"
+            "/modern-sports-academy-training-facility1.jpg"
           ],
           "details": ["مؤسس ومالك", "برامج تدريب رياضي شاملة", "التركيز على تطوير الشباب", "تخصصات رياضية متعددة"]
+        }
+      ]
+    },
+    "media": {
+      "title": "معرض الوسائط",
+      "galleryTitle": "معرض الصور",
+      "videosTitle": "مقابلات الفيديو",
+      "galleryDescription": "مجموعة من اللحظات المميزة من رحلتي المهنية",
+      "videosDescription": "مقابلات تلفزيونية وإعلامية تقدم رؤى وخبراتي",
+      "gallery": [
+        {
+          "id": 1,
+          "title":"الفيفا",
+          "description": "وكيل لاعبين معتمد من الفيفا",
+          "src": "/fifa.jpg"
+        },
+        {
+          "id": 2,
+          "title": "بطولة اشكناني",
+          "description": "مؤسس بطولة اشكناني الرمضانية الاولى 2024",
+          "src": "/ashknani-comp.jpg"
+        },
+        {
+          "id": 3,
+          "title": "محاضر",
+          "description": "مدرب ومحاضر معتمد دولي فى مجال الادارة التربوية والرياضية",
+          "src": "/lec.jpg"
+        },
+        {
+          "id": 4,
+          "title": "محاضر فى الاتحاد الكويتي",
+          "description": "محاضر فى الاتحاد الكويتي لكرة القدم",
+          "src": "/lec-kw.jpg"
+        },
+        {
+          "id": 5,
+          "title": "القاء محاضرة فى الاتحاد",
+          "description": "القاء محاضرة فى الاتحاد الكويتي لكرة القدم",
+          "src": "/lec-kw2.jpg"
+        },
+        {
+          "id": 6,
+          "title": "محاضرة فى جامعة الكويت",
+          "description": "إلقاء محاضرة فى جامعة الكويت",
+          "src": "/lec-kw-un.jpg"
+        }
+       
+      ],
+      "videos": [
+        {
+          "id": 1,
+          "title": "بودكاست 2025",
+          "description": "بودكاست شامل يناقش أحدث التطورات في الإدارة الرياضية ورحلتي المهنية",
+          "url": "https://www.youtube.com/watch?v=Aeqkwqx_YpY",
+          "date": "2025"
+        },
+        {
+          "id": 2,
+          "title": "حلقة بالسنتر 2025",
+          "description": "حلقة خاصة مسجلة في السنتر، تركز على التعليم الرياضي ومنهجيات التدريب",
+          "url": "https://www.youtube.com/watch?v=M_8fWkVwe9A",
+          "date": "2025"
+        },
+        {
+          "id": 3,
+          "title": "رؤى في الإدارة الرياضية",
+          "description": "مشاركة رؤى قيمة حول استراتيجيات الإدارة الرياضية الفعالة ومبادئ القيادة",
+          "url": "https://www.youtube.com/watch?v=VBTDTDIvzBQ",
+          "date": "2025"
+        },
+        {
+          "id": 4,
+          "title": "برنامج تطوير الرياضيين",
+          "description": "مناقشة المقاربات الشاملة لتطوير الرياضيين واكتشاف المواهب",
+          "url": "https://www.youtube.com/watch?v=2cbHrcGPH64",
+          "date": "2025"
+        },
+        {
+          "id": 5,
+          "title": "علم النفس الرياضي عملياً",
+          "description": "تطبيقات عملية لتقنيات علم النفس الرياضي لتحسين الأداء الرياضي",
+          "url": "https://www.youtube.com/watch?v=EchwFvsSFu0",
+          "date": "2024"
+        },
+        {
+          "id": 6,
+          "title": "مستقبل التعليم الرياضي",
+          "description": "استكشاف المقاربات المبتكرة والاتجاهات المستقبلية في التعليم الرياضي والتدريب",
+          "url": "https://www.youtube.com/watch?v=t5L2UWmwpu8",
+          "date": "2024"
+        },
+        {
+          "id": 7,
+          "title": "خلف الكواليس كأس الخليج 26",
+          "description": "نظرة حصرية خلف الكواليس على تنظيم وإدارة كأس الخليج 26",
+          "url": "https://www.youtube.com/watch?v=_EJloO8dduc",
+          "date": "2023"
+        },
+        {
+          "id": 8,
+          "title": "القانون الرياضي واللوائح",
+          "description": "مناقشة مفصلة حول القانون الرياضي واللوائح وأثرها على الإدارة الرياضية الحديثة",
+          "url": "https://www.youtube.com/watch?v=YV3eN-Ocg3A",
+          "date": "2022"
+        },
+        {
+          "id": 9,
+          "title": "بناء الأكاديميات الرياضية الناجحة",
+          "description": "المبادئ والاستراتيجيات الأساسية لتأسيس وإدارة الأكاديميات الرياضية الناجحة",
+          "url": "https://www.youtube.com/watch?v=ttq9mblsA_k",
+          "date": "2021"
         }
       ]
     },
@@ -846,14 +1059,14 @@
           "image": "/sports-management-certification-diploma.jpg"
         },
         {
-          "title": "رئيس خليجي 26",
-          "description": "قيادة اللجنة المنظمة لبطولة كأس الخليج الكويت 2024-2025",
+          "title": "رئيس أحد لجان خليجي 26",
+          "description": "قيادة احد اللجان المنظمة لبطولة كأس الخليج الكويت 2024-2025",
           "image": "/gulf-cup-trophy-presentation.jpg"
         },
         {
           "title": "166+ رياضي تحت الإدارة",
           "description": "تمثيل ناجح للرياضيين والرياضيات في رياضات متعددة",
-          "image": "/sports-team-group-photo-celebration.jpg"
+          "image": "/166.jpeg"
         }
       ],
       "certificationsTitle": "الشهادات المهنية",
@@ -960,6 +1173,7 @@
           "organization": "الاتحاد الفرنسي للمستشارين القانونيين",
           "date": "2023",
           "images": [
+            "/certificate-sports-contracts3.jpg",
             "/certificate-sports-contracts.jpg",
             "/certificate-sports-contracts2.jpg"
           ]

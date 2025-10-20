@@ -24,6 +24,7 @@ export default function Navigation() {
     { href: "#home", label: content.navigation.home },
     { href: "#about", label: content.navigation.about },
     { href: "#portfolio", label: content.navigation.portfolio },
+    { href: "#media-gallery", label: content.navigation.gallery },
     { href: "#achievements", label: content.navigation.achievements },
     { href: "#contact", label: content.navigation.contact },
   ]

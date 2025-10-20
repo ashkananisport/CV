@@ -9,6 +9,8 @@ const About = dynamic(() => import("@/components/about"), { ssr: false })
 const Portfolio = dynamic(() => import("@/components/portfolio"), { ssr: false })
 const Achievements = dynamic(() => import("@/components/achievements"), { ssr: false })
 const Contact = dynamic(() => import("@/components/contact"), { ssr: false })
+const Gallery = dynamic(() => import("@/components/gallery"), { ssr: false })
+
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
       <Hero />
       <About />
       <Portfolio />
+      <Gallery/>
       <Achievements />
       <Contact />
     </main>
