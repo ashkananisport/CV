@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { ChevronLeft, ChevronRight, X, ExternalLink, Youtube } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import { useSearchParams } from "next/navigation"
 
 export default function MediaGallery() {
   const [isVisible, setIsVisible] = useState(false)
@@ -24,6 +25,17 @@ export default function MediaGallery() {
   // حساب الحد الأقصى للفهرس بناءً على عدد العناصر في الصفحة
   const maxIndex = Math.max(0, totalImages - itemsPerPage)
   const maxVideoIndex = Math.max(0, totalVideos - itemsPerPage)
+  const searchParams = useSearchParams()
+
+  // تحقق من وجود معلمة التبويب في URL
+  useEffect(() => {
+    const tabParam = searchParams.get('tab')
+    if (tabParam !== null) {
+      const tabIndex = parseInt(tabParam)
+      if (tabIndex === 0) setActiveTab("gallery")
+      else if (tabIndex === 1) setActiveTab("videos")
+    }
+  }, [searchParams])
 
   // تحديث عدد العناصر في الصفحة بناءً على حجم الشاشة
   useEffect(() => {

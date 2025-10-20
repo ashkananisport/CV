@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { useLanguage } from "@/contexts/language-context"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import ImageLightbox from "./image-lightbox"
+import { useSearchParams } from "next/navigation"
 
 export default function Portfolio() {
   const [isVisible, setIsVisible] = useState(false)
@@ -14,6 +15,15 @@ export default function Portfolio() {
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0)
   const sectionRef = useRef<HTMLElement>(null)
   const { content, language } = useLanguage()
+   const searchParams = useSearchParams()
+
+  // تحقق من وجود معلمة التبويب في URL
+  useEffect(() => {
+    const tabParam = searchParams.get('tab')
+    if (tabParam !== null) {
+      setActiveTab(parseInt(tabParam))
+    }
+  }, [searchParams])
 
   // Reset gallery index when tab changes
   useEffect(() => {

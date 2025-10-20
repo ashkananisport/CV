@@ -26,7 +26,7 @@ export default function Achievements() {
   const maxIndex = Math.max(0, totalCerts - itemsPerPage)
   const maxCoursesIndex = Math.max(0, totalCourses - itemsPerPage)
   const maxAppreciationIndex = Math.max(0, totalAppreciation - itemsPerPage)
-
+  
   // Update itemsPerPage based on window size
   useEffect(() => {
     const updateItemsPerPage = () => {
