@@ -527,14 +527,15 @@
           ]
         },
         {
-          "title": "شهادة حضور: دورة الرعايات الرياضية",
-          "description": "يشهد معهد إعداد القادة بوزارة الرياضة بأن أحمد أشكناني قد حضر دورة/دورات الرعايات الرياضية والتي تم تنفيذها عن بُعد خلال الفترة من 28 إلى 29 أكتوبر 2025، وذلك بمعدل إجمالي 4 ساعات تدريبية، وبناءً عليه تم منح هذه الشهادة. موقعة من د. مزنه بنت عبدالرحمن المرزوغي (مدير عام معهد إعداد القادة)، وعادل بن أحمد الشويرخ (مدير إدارة التعليم والتطوير).",
-          "organization": "وزارة الرياضة - معهد إعداد القادة",
-          "date": "28–29 / 10 / 2025",
-          "images": [
-            "/sports-sponsorship-cert-2025.jpg"
-          ]
-        },
+            "title": "Attendance Certificate: Sports Sponsorship Course",
+            "description": "This is to certify that Ahmed Ashkanani attended the Sports Sponsorship Course, delivered remotely during the period from October 28 to 29, 2025, with a total of 4 training hours. The certificate is issued by the Leadership Development Institute, Ministry of Sport, and signed by Dr. Muznah Al-Marzouqi (General Director of the Leadership Development Institute) and Adel Al-Shuwairikh (Director of Education & Development Department).",
+            "organization": "Ministry of Sport – Leadership Development Institute",
+            "date": "October 28–29, 2025",
+            "images": [
+              "/sports-sponsorship-cert-2025.jpg"
+            ]
+          }
+          ,
 
         {
           "title": "Governance and Local Policies of Host Countries for Major Sporting Events",
