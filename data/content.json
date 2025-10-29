@@ -413,6 +413,15 @@
       "certificationsTitle": "Professional Certifications",
       "certifications": [
         {
+          "title": "Certificate of Achievement: Prime Sport Center",
+          "description": "Ahmed J. M. A. R. Ashkanani received a certificate from Prime Sport Center for becoming an athlete at the center and completing the 2-hour training session. The certificate was issued on June 26th, 2025, and signed by Javier Ledesma (Owner).",
+          "organization": "Prime Sport Center",
+          "date": "June 26, 2025",
+          "images": [
+            "/certificate-prime-sport-center.jpg"
+          ]
+        },
+        {
           "title": "Sports Contracts Experts Diploma",
           "organization": "French Union of Legal Advisors",
           "date": "2023",
@@ -427,7 +436,7 @@
           "organization": "Kuwait Football Association",
           "date": "2022",
           "images": [
-            "/certificate-sports-manager-a.jpg"
+            "/sports-management-certification-diploma.jpg"
           ]
         },
         {
@@ -446,7 +455,8 @@
             "/certificate-sports-rehab.jpg"
           ]
         },
-        {
+        
+         {
           "title": "Sports Injuries Diploma",
           "organization": "Qatari Sports Academy",
           "date": "2021",
@@ -523,6 +533,26 @@
       "coursesTitle": "Training Courses",
       "courses": [
         {
+          "title": "Attendance Certificate: Sports Sponsorship Course",
+          "description": "This is to certify that Ahmed Ashkanani attended the Sports Sponsorship Course, delivered remotely during the period from October 28 to 29, 2025, with a total of 4 training hours. The certificate is issued by the Leadership Development Institute, Ministry of Sport, and signed by Dr. Muznah Al-Marzouqi (General Director of the Leadership Development Institute) and Adel Al-Shuwairikh (Director of Education & Development Department).",
+          "organization": "Ministry of Sport – Leadership Development Institute",
+          "date": "October 28–29, 2025",
+          "images": [
+            "/sports-sponsorship-cert-2025.jpg"
+          ]
+        },
+
+        {
+          "title": "شهادة حضور: دورة الرعايات الرياضية",
+          "description": "يشهد معهد إعداد القادة بوزارة الرياضة بأن أحمد أشكناني قد حضر دورة/دورات الرعايات الرياضية والتي تم تنفيذها عن بُعد خلال الفترة من 28 إلى 29 أكتوبر 2025، وذلك بمعدل إجمالي 4 ساعات تدريبية، وبناءً عليه تم منح هذه الشهادة. موقعة من د. مزنه بنت عبدالرحمن المرزوغي (مدير عام معهد إعداد القادة)، وعادل بن أحمد الشويرخ (مدير إدارة التعليم والتطوير).",
+          "organization": "وزارة الرياضة - معهد إعداد القادة",
+          "date": "28–29 / 10 / 2025",
+          "images": [
+            "/sports-sponsorship-cert-2025.jpg"
+          ]
+        },
+
+        {
           "title": "Governance and Local Policies of Host Countries for Major Sporting Events",
           "description": "Leaders Preparation Institute - Ministry of Sports, 30-09-2025",
           "images": [
@@ -557,6 +587,16 @@
             "/course-public-speaking.jpg"
           ]
         },
+        {
+        "title": "Attendance Certificate: Governance of Sports Institutions Program",
+        "description": "This is to certify that Mr. Ahmed Jaber Mohammed Ashkanani attended the training program titled \"Governance of Sports Institutions\", organized by the Abdullah Al-Salem Leadership Development Center. The program was held from November 3 to November 7, 2024. This certificate is issued and authorized by the center's administration.",
+        "organization": "Abdullah Al-Salem Leadership Development Center",
+        "date": "November 3–7, 2024",
+        "images": [
+          "/governance-sports-institutions-training-2024.jpg"
+        ]
+      },
+
         {
           "title": "Certificate of Participation: Arab University Futsal Championship",
           "description": "Ahmed Jaber Mohammed Ashkanani participated in the Arab University Futsal Championship (Year of Zayed) organized by the Arab University Sports Federation, held in Abu Dhabi, United Arab Emirates, from October 3 to 11, 2018. The certificate was signed by Dr. Omar Abdulaziz Al-Hajji (Secretary General) and Dr. Saeed Hamad Al-Hassani (President of the Federation).",
@@ -1075,6 +1115,15 @@
       "certificationsTitle": "الشهادات المهنية",
       "certifications": [
         {
+          "title": "شهادة إنجاز: Prime Sport Center",
+          "description": "حصل أحمد ج. م. أ. أشكناني على شهادة من مركز Prime Sport Center تقديرًا لانضمامه كأحد الرياضيين بالمركز وإكماله جلسة تدريبية لمدة ساعتين. أُصدرت الشهادة بتاريخ 26 يونيو 2025 بتوقيع Javier Ledesma (مالك المركز).",
+          "organization": "Prime Sport Center",
+          "date": "26 يونيو 2025",
+          "images": [
+            "/certificate-prime-sport-center.jpg"
+          ]
+        },
+        {
           "title": "دبلوم خبراء العقود الرياضية",
           "organization": "الاتحاد الفرنسي للمستشارين القانونيين",
           "date": "2023",
@@ -1089,7 +1138,7 @@
           "organization": "اتحاد الكويت لكرة القدم",
           "date": "2022",
           "images": [
-            "/certificate-sports-manager-a.jpg"
+            "/sports-management-certification-diploma.jpg"
           ]
         },
         {
@@ -1108,6 +1157,8 @@
             "/certificate-sports-rehab.jpg"
           ]
         },
+        
+
         {
           "title": "حاصل على شهادة دبلوم إصابات الملعب",
           "organization": "الأكاديمية الرياضية القطرية",
@@ -1219,6 +1270,16 @@
             "/course-public-speaking.jpg"
           ]
         },
+        {
+          "title": "شهادة حضور: برنامج حوكمة المؤسسات الرياضية",
+          "description": "يشهد مركز عبدالله السالم لإعداد القادة بأن السيد/ أحمد جابر محمد أشكناني قد حضر البرنامج التدريبي بعنوان «حوكمة المؤسسات الرياضية» والذي أقيم خلال الفترة من 03/11/2024 م إلى 07/11/2024 م. تم إصدار هذه الشهادة بتوقيع وإعتماد إدارة المركز.",
+          "organization": "مركز عبدالله السالم لإعداد القادة",
+          "date": "03–07 / 11 / 2024",
+          "images": [
+            "/governance-sports-institutions-training-2024.jpg"
+          ]
+        },
+
         {
           "title": "شهادة مشاركة: البطولة العربية الجامعية لكرة القدم للصالات",
           "description": "شارك أحمد جابر محمد أشكناني في فعاليات البطولة العربية الجامعية لكرة القدم للصالات (عام زايد) التي نظمها الاتحاد العربي للرياضة الجامعية، والمقامة في مدينة أبوظبي بدولة الإمارات العربية المتحدة، خلال الفترة من 3 إلى 11 أكتوبر 2018. صدرت الشهادة بتوقيع د. عمر عبدالعزيز الحاجي (الأمين العام) ود. سعيد حمد الحساني (رئيس الاتحاد).",
