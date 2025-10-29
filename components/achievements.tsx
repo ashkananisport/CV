@@ -170,6 +170,8 @@ export default function Achievements() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-20">
           {content.achievements.featured.map((achievement, index) => {
             const Icon = iconMap[index]
+            const hasImage = achievement.image && achievement.image !== "/placeholder.svg"
+            
             return (
               <div
                 key={index}
@@ -178,18 +180,25 @@ export default function Achievements() {
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
                 onClick={() => {
-                  // Handle single image for featured achievements
-                  const images = [achievement.image || "/placeholder.svg"]
-                  openLightbox(images, achievement.title)
+                  if (hasImage) {
+                    const images = [achievement.image]
+                    openLightbox(images, achievement.title)
+                  }
                 }}
               >
-                <div className="aspect-[3/4] overflow-hidden">
-                  <img
-                    src={achievement.image || "/placeholder.svg"}
-                    alt={achievement.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                {hasImage ? (
+                  <div className="aspect-[3/4] overflow-hidden">
+                    <img
+                      src={achievement.image}
+                      alt={achievement.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="aspect-[3/4] flex items-center justify-center p-6 bg-muted">
+                    <p className="text-center text-foreground font-medium">{achievement.title}</p>
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/90 to-transparent" />
                 <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
                   <div className="mb-4">
@@ -274,60 +283,67 @@ export default function Achievements() {
                 >
                   {content.achievements.certifications.map((cert, index) => {
                     // Get all images for this certification
-                    const certImages = cert.images || ["/placeholder.svg"]
-                    const hasMultipleImages = certImages.length > 1
+                    const certImages = cert.images || []
+                    const hasImages = certImages.length > 0 && certImages[0] !== "/placeholder.svg"
+                    const hasMultipleImages = hasImages && certImages.length > 1
                     
                     return (
                       <div
                         key={index}
                         className="flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-24px)] relative overflow-hidden rounded-lg bg-white shadow-md"
                       >
-                        {/* Certificate Image */}
-                        <div
-                          className="aspect-[3/4] overflow-hidden bg-muted cursor-pointer relative"
-                          onClick={() => openLightbox(certImages, cert.title)}
-                        >
-                          <img
-                            src={certImages[0] || "/placeholder.svg"}
-                            alt={cert.title}
-                            className="w-full h-full object-contain"
-                          />
-                          
-                          {/* Show image counter if multiple images */}
-                          {hasMultipleImages && (
-                            <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full flex items-center">
-                              <Camera className="w-3 h-3 mr-1" />
-                              {certImages.length}
-                            </div>
-                          )}
-                          
-                          {/* Image thumbnails for multiple images */}
-                          {hasMultipleImages && (
-                            <div className="absolute bottom-2 left-2 flex gap-1">
-                              {certImages.slice(0, 3).map((img, imgIndex) => (
-                                <div 
-                                  key={imgIndex}
-                                  className="w-6 h-6 rounded border-2 border-white overflow-hidden cursor-pointer"
-                                  onClick={(e) => {
-                                    e.stopPropagation()
-                                    openLightbox(certImages, cert.title, imgIndex)
-                                  }}
-                                >
-                                  <img 
-                                    src={img} 
-                                    alt={`${cert.title} - Image ${imgIndex + 1}`}
-                                    className="w-full h-full object-cover"
-                                  />
-                                </div>
-                              ))}
-                              {certImages.length > 3 && (
-                                <div className="w-6 h-6 rounded bg-black/50 text-white text-xs flex items-center justify-center">
-                                  +{certImages.length - 3}
-                                </div>
-                              )}
-                            </div>
-                          )}
-                        </div>
+                        {/* Certificate Image or Text */}
+                        {hasImages ? (
+                          <div
+                            className="aspect-[3/4] overflow-hidden bg-muted cursor-pointer relative"
+                            onClick={() => openLightbox(certImages, cert.title)}
+                          >
+                            <img
+                              src={certImages[0]}
+                              alt={cert.title}
+                              className="w-full h-full object-contain"
+                            />
+                            
+                            {/* Show image counter if multiple images */}
+                            {hasMultipleImages && (
+                              <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                <Camera className="w-3 h-3 mr-1" />
+                                {certImages.length}
+                              </div>
+                            )}
+                            
+                            {/* Image thumbnails for multiple images */}
+                            {hasMultipleImages && (
+                              <div className="absolute bottom-2 left-2 flex gap-1">
+                                {certImages.slice(0, 3).map((img, imgIndex) => (
+                                  <div 
+                                    key={imgIndex}
+                                    className="w-6 h-6 rounded border-2 border-white overflow-hidden cursor-pointer"
+                                    onClick={(e) => {
+                                      e.stopPropagation()
+                                      openLightbox(certImages, cert.title, imgIndex)
+                                    }}
+                                  >
+                                    <img 
+                                      src={img} 
+                                      alt={`${cert.title} - Image ${imgIndex + 1}`}
+                                      className="w-full h-full object-cover"
+                                    />
+                                  </div>
+                                ))}
+                                {certImages.length > 3 && (
+                                  <div className="w-6 h-6 rounded bg-black/50 text-white text-xs flex items-center justify-center">
+                                    +{certImages.length - 3}
+                                  </div>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          <div className="aspect-[3/4] flex items-center justify-center p-6 bg-muted">
+                            <p className="text-center text-foreground font-medium">{cert.title}</p>
+                          </div>
+                        )}
 
                         {/* Certificate Details */}
                         <div className="p-4 bg-white">
@@ -402,65 +418,71 @@ export default function Achievements() {
                 >
                   {content.achievements.courses.map((course, index) => {
                     // Get all images for this course
-                    const courseImages = course.images || ["/placeholder.svg"]
-                    const hasMultipleImages = courseImages.length > 1
+                    const courseImages = course.images || []
+                    const hasImages = courseImages.length > 0 && courseImages[0] !== "/placeholder.svg"
+                    const hasMultipleImages = hasImages && courseImages.length > 1
                     
                     return (
                       <div
                         key={index}
                         className="flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-24px)] relative overflow-hidden rounded-lg bg-white shadow-md"
                       >
-                        {/* Course Image */}
-                        <div
-                          className="aspect-[3/4] overflow-hidden bg-muted cursor-pointer relative"
-                          onClick={() => openLightbox(courseImages, course.title)}
-                        >
-                          <img
-                            src={courseImages[0] || "/placeholder.svg"}
-                            alt={course.title}
-                            className="w-full h-full object-contain"
-                          />
-                          
-                          {/* Show image counter if multiple images */}
-                          {hasMultipleImages && (
-                            <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full flex items-center">
-                              <Camera className="w-3 h-3 mr-1" />
-                              {courseImages.length}
-                            </div>
-                          )}
-                          
-                          {/* Image thumbnails for multiple images */}
-                          {hasMultipleImages && (
-                            <div className="absolute bottom-2 left-2 flex gap-1">
-                              {courseImages.slice(0, 3).map((img, imgIndex) => (
-                                <div 
-                                  key={imgIndex}
-                                  className="w-6 h-6 rounded border-2 border-white overflow-hidden cursor-pointer"
-                                  onClick={(e) => {
-                                    e.stopPropagation()
-                                    openLightbox(courseImages, course.title, imgIndex)
-                                  }}
-                                >
-                                  <img 
-                                    src={img} 
-                                    alt={`${course.title} - Image ${imgIndex + 1}`}
-                                    className="w-full h-full object-cover"
-                                  />
-                                </div>
-                              ))}
-                              {courseImages.length > 3 && (
-                                <div className="w-6 h-6 rounded bg-black/50 text-white text-xs flex items-center justify-center">
-                                  +{courseImages.length - 3}
-                                </div>
-                              )}
-                            </div>
-                          )}
-                        </div>
+                        {/* Course Image or Text */}
+                        {hasImages ? (
+                          <div
+                            className="aspect-[3/4] overflow-hidden bg-muted cursor-pointer relative"
+                            onClick={() => openLightbox(courseImages, course.title)}
+                          >
+                            <img
+                              src={courseImages[0]}
+                              alt={course.title}
+                              className="w-full h-full object-contain"
+                            />
+                            
+                            {/* Show image counter if multiple images */}
+                            {hasMultipleImages && (
+                              <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                <Camera className="w-3 h-3 mr-1" />
+                                {courseImages.length}
+                              </div>
+                            )}
+                            
+                            {/* Image thumbnails for multiple images */}
+                            {hasMultipleImages && (
+                              <div className="absolute bottom-2 left-2 flex gap-1">
+                                {courseImages.slice(0, 3).map((img, imgIndex) => (
+                                  <div 
+                                    key={imgIndex}
+                                    className="w-6 h-6 rounded border-2 border-white overflow-hidden cursor-pointer"
+                                    onClick={(e) => {
+                                      e.stopPropagation()
+                                      openLightbox(courseImages, course.title, imgIndex)
+                                    }}
+                                  >
+                                    <img 
+                                      src={img} 
+                                      alt={`${course.title} - Image ${imgIndex + 1}`}
+                                      className="w-full h-full object-cover"
+                                    />
+                                  </div>
+                                ))}
+                                {courseImages.length > 3 && (
+                                  <div className="w-6 h-6 rounded bg-black/50 text-white text-xs flex items-center justify-center">
+                                    +{courseImages.length - 3}
+                                  </div>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          <div className="aspect-[3/4] flex items-center justify-center p-6 bg-muted">
+                            <p className="text-center text-foreground font-medium">{course.title}</p>
+                          </div>
+                        )}
 
                         {/* Course Details */}
                         <div className="p-4 bg-white">
                           <div className="flex items-center mb-3">
-                           
                             <h4 className="font-serif text-lg font-bold text-foreground line-clamp-2">{course.title}</h4>
                           </div>
                           <p className="text-sm text-muted-foreground">{course.description}</p>
@@ -523,60 +545,67 @@ export default function Achievements() {
                 >
                   {content.achievements.appreciation && content.achievements.appreciation.map((item, index) => {
                     // Get all images for this appreciation
-                    const appreciationImages = item.images || ["/placeholder.svg"]
-                    const hasMultipleImages = appreciationImages.length > 1
+                    const appreciationImages = item.images || []
+                    const hasImages = appreciationImages.length > 0 && appreciationImages[0] !== "/placeholder.svg"
+                    const hasMultipleImages = hasImages && appreciationImages.length > 1
                     
                     return (
                       <div
                         key={index}
                         className="flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-24px)] relative overflow-hidden rounded-lg bg-white shadow-md"
                       >
-                        {/* Appreciation Image */}
-                        <div
-                          className="aspect-[3/4] overflow-hidden bg-muted cursor-pointer relative"
-                          onClick={() => openLightbox(appreciationImages, item.title)}
-                        >
-                          <img
-                            src={appreciationImages[0] || "/placeholder.svg"}
-                            alt={item.title}
-                            className="w-full h-full object-contain"
-                          />
-                          
-                          {/* Show image counter if multiple images */}
-                          {hasMultipleImages && (
-                            <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full flex items-center">
-                              <Camera className="w-3 h-3 mr-1" />
-                              {appreciationImages.length}
-                            </div>
-                          )}
-                          
-                          {/* Image thumbnails for multiple images */}
-                          {hasMultipleImages && (
-                            <div className="absolute bottom-2 left-2 flex gap-1">
-                              {appreciationImages.slice(0, 3).map((img, imgIndex) => (
-                                <div 
-                                  key={imgIndex}
-                                  className="w-6 h-6 rounded border-2 border-white overflow-hidden cursor-pointer"
-                                  onClick={(e) => {
-                                    e.stopPropagation()
-                                    openLightbox(appreciationImages, item.title, imgIndex)
-                                  }}
-                                >
-                                  <img 
-                                    src={img} 
-                                    alt={`${item.title} - Image ${imgIndex + 1}`}
-                                    className="w-full h-full object-cover"
-                                  />
-                                </div>
-                              ))}
-                              {appreciationImages.length > 3 && (
-                                <div className="w-6 h-6 rounded bg-black/50 text-white text-xs flex items-center justify-center">
-                                  +{appreciationImages.length - 3}
-                                </div>
-                              )}
-                            </div>
-                          )}
-                        </div>
+                        {/* Appreciation Image or Text */}
+                        {hasImages ? (
+                          <div
+                            className="aspect-[3/4] overflow-hidden bg-muted cursor-pointer relative"
+                            onClick={() => openLightbox(appreciationImages, item.title)}
+                          >
+                            <img
+                              src={appreciationImages[0]}
+                              alt={item.title}
+                              className="w-full h-full object-contain"
+                            />
+                            
+                            {/* Show image counter if multiple images */}
+                            {hasMultipleImages && (
+                              <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                <Camera className="w-3 h-3 mr-1" />
+                                {appreciationImages.length}
+                              </div>
+                            )}
+                            
+                            {/* Image thumbnails for multiple images */}
+                            {hasMultipleImages && (
+                              <div className="absolute bottom-2 left-2 flex gap-1">
+                                {appreciationImages.slice(0, 3).map((img, imgIndex) => (
+                                  <div 
+                                    key={imgIndex}
+                                    className="w-6 h-6 rounded border-2 border-white overflow-hidden cursor-pointer"
+                                    onClick={(e) => {
+                                      e.stopPropagation()
+                                      openLightbox(appreciationImages, item.title, imgIndex)
+                                    }}
+                                  >
+                                    <img 
+                                      src={img} 
+                                      alt={`${item.title} - Image ${imgIndex + 1}`}
+                                      className="w-full h-full object-cover"
+                                    />
+                                  </div>
+                                ))}
+                                {appreciationImages.length > 3 && (
+                                  <div className="w-6 h-6 rounded bg-black/50 text-white text-xs flex items-center justify-center">
+                                    +{appreciationImages.length - 3}
+                                  </div>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          <div className="aspect-[3/4] flex items-center justify-center p-6 bg-muted">
+                            <p className="text-center text-foreground font-medium">{item.title}</p>
+                          </div>
+                        )}
 
                         {/* Appreciation Details */}
                         <div className="p-4 bg-white">
@@ -665,7 +694,14 @@ export default function Achievements() {
                 onError={(e) => {
                   // If image fails to load, show a placeholder
                   const target = e.target as HTMLImageElement;
-                  target.src = "/placeholder.svg";
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    const textDiv = document.createElement('div');
+                    textDiv.className = 'text-white text-center p-8';
+                    textDiv.textContent = lightboxImage.alt;
+                    parent.appendChild(textDiv);
+                  }
                 }}
               />
             </div>
