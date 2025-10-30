@@ -240,69 +240,89 @@ export default function Contact() {
           </div>
 
           <div className="mt-20 pt-8 border-t border-border">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-              <p className="text-foreground/60 text-xs sm:text-sm text-center md:text-left">{content.contact.footer}</p>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <p className="text-foreground/60 text-xs sm:text-sm text-center md:text-left">{content.contact.footer}</p>
+            
+            <div className="flex flex-col sm:flex-row items-center gap-6">
+              <div className="flex gap-4">
+                <a
+                  href={content.socialMedia.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/60 hover:text-primary transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href={content.socialMedia.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/60 hover:text-primary transition-colors"
+                  aria-label="Twitter/X"
+                >
+                  <XIcon className="h-5 w-5" />
+                </a>
+              </div>
               
-              <div className="flex flex-col sm:flex-row items-center gap-6">
-                <div className="flex gap-4">
-                  <a
-                    href={content.socialMedia.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground/60 hover:text-primary transition-colors"
-                    aria-label="Instagram"
-                  >
-                    <Instagram className="h-5 w-5" />
-                  </a>
-                  <a
-                    href={content.socialMedia.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground/60 hover:text-primary transition-colors"
-                    aria-label="Twitter/X"
-                  >
-                    <XIcon className="h-5 w-5" />
-                  </a>
-                </div>
+              <div className="flex items-center gap-6">
+                {/* Ashkanani Company Logo */}
+                <a
+                  href="https://ashknanisport2025.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-center transition-all duration-300 hover:scale-105"
+                  aria-label="Ashkanani Company"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="relative bg-white rounded-lg p-2 shadow-md group-hover:shadow-lg transition-shadow">
+                    <img 
+                      src="/ashkanani-logo.png"
+                      alt="Ashkanani Company" 
+                      className="h-10 w-auto"
+                    />
+                  </div>
+                </a>
                 
-                <div className="flex items-center gap-4">
-                  {/* Ashkanani Company Logo */}
-                  <a
-                    href="https://ashknanisport2025.vercel.app/" // رابط موقع شركة أشكناني
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 hover:opacity-80 transition-opacity"
-                    aria-label="Ashkanani Company"
-                  >
-                    <div className="bg-white rounded-md p-1">
-                      <img 
-                        src="/ashkanani-logo.png" // مسار شعار شركة أشكناني
-                        alt="Ashkanani Company" 
-                        className="h-8 w-auto"
-                      />
-                    </div>
-                  </a>
-                  
-                  {/* Spark Sport Academy Logo */}
-                  <a
-                    href="https://sparksport.com" // رابط موقع أكاديمية سبارك
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 hover:opacity-80 transition-opacity"
-                    aria-label="Spark Sport Academy"
-                  >
-                    <div className="bg-white rounded-md p-1">
-                      <img 
-                        src="/spark-logo.jpg" // مسار شعار أكاديمية سبارك
-                        alt="Spark Sport Academy" 
-                        className="h-8 w-auto"
-                      />
-                    </div>
-                  </a>
-                </div>
+                {/* Spark Sport Academy Logo */}
+                <a
+                  href="https://sparksport.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-center transition-all duration-300 hover:scale-105"
+                  aria-label="Spark Sport Academy"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="relative bg-white rounded-lg p-2 shadow-md group-hover:shadow-lg transition-shadow">
+                    <img 
+                      src="/spark-logo.jpg"
+                      alt="Spark Sport Academy" 
+                      className="h-10 w-auto"
+                    />
+                  </div>
+                </a>
+                
+                {/* Ashknani Company Logo */}
+                <a
+                  href="https://Ashknani-comp.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-center transition-all duration-300 hover:scale-105"
+                  aria-label="Ashknani Company"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="relative bg-white rounded-lg p-2 shadow-md group-hover:shadow-lg transition-shadow">
+                    <img 
+                      src="/Ashknani-comp.png"
+                      alt="Ashknani Company" 
+                      className="h-10 w-auto"
+                    />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
