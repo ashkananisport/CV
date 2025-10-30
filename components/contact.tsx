@@ -240,89 +240,88 @@ export default function Contact() {
           </div>
 
           <div className="mt-20 pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <p className="text-foreground/60 text-xs sm:text-sm text-center md:text-left">{content.contact.footer}</p>
-            
-            <div className="flex flex-col sm:flex-row items-center gap-6">
-              <div className="flex gap-4">
-                <a
-                  href={content.socialMedia.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground/60 hover:text-primary transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="h-5 w-5" />
-                </a>
-                <a
-                  href={content.socialMedia.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground/60 hover:text-primary transition-colors"
-                  aria-label="Twitter/X"
-                >
-                  <XIcon className="h-5 w-5" />
-                </a>
-              </div>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+              <p className="text-foreground/60 text-xs sm:text-sm text-center md:text-left">{content.contact.footer}</p>
               
-              <div className="flex items-center gap-6">
-                {/* Ashkanani Company Logo */}
-                <a
-                  href="https://ashknanisport2025.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative flex items-center justify-center transition-all duration-300 hover:scale-105"
-                  aria-label="Ashkanani Company"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity"></div>
-                  <div className="relative bg-white rounded-lg p-2 shadow-md group-hover:shadow-lg transition-shadow">
-                    <img 
-                      src="/ashkanani-logo.png"
-                      alt="Ashkanani Company" 
-                      className="h-10 w-auto"
-                    />
-                  </div>
-                </a>
+              <div className="flex flex-col sm:flex-row items-center gap-6">
+                <div className="flex gap-4">
+                  <a
+                    href={content.socialMedia.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/60 hover:text-primary transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <Instagram className="h-5 w-5" />
+                  </a>
+                  <a
+                    href={content.socialMedia.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/60 hover:text-primary transition-colors"
+                    aria-label="Twitter/X"
+                  >
+                    <XIcon className="h-5 w-5" />
+                  </a>
+                </div>
                 
-                {/* Spark Sport Academy Logo */}
-                <a
-                  href="https://sparksport.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative flex items-center justify-center transition-all duration-300 hover:scale-105"
-                  aria-label="Spark Sport Academy"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity"></div>
-                  <div className="relative bg-white rounded-lg p-2 shadow-md group-hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-4">
+                  {/* Ashkanani Company Logo */}
+                  <a
+                      href="https://ashknanisport2025.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="partner-logo flex items-center justify-center h-15 w-20 border-2 border-primary rounded-lg p-2 
+                                bg-gray-900 transition-all duration-300 hover:scale-105 hover:bg-gray-800"
+                      aria-label="Ashkanani Company"
+                      title="Ashkanani Company"
+                    >
+                      <img 
+                        src="/ashkanani-logo.png"
+                        alt="Ashkanani Company" 
+                        className="max-h-full max-w-full object-contain"
+                        loading="lazy"
+                      />
+                    </a>
+
+                  
+                  {/* Spark Sport Academy Logo */}
+                  <a
+                    href="https://sparksport.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="partner-logo flex items-center justify-center h-15 w-15 border-2 border-primary rounded-lg p-1 bg-white/90 transition-all duration-300 hover:scale-105 hover:bg-white/90 hover:opacity-100 opacity-90"
+                    aria-label="Spark Sport Academy"
+                    title="Spark Sport Academy"
+                  >
                     <img 
                       src="/spark-logo.jpg"
                       alt="Spark Sport Academy" 
-                      className="h-10 w-auto"
+                      className="max-h-full max-w-full object-contain"
+                      loading="lazy"
                     />
-                  </div>
-                </a>
-                
-                {/* Ashknani Company Logo */}
-                <a
-                  href="https://Ashknani-comp.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative flex items-center justify-center transition-all duration-300 hover:scale-105"
-                  aria-label="Ashknani Company"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity"></div>
-                  <div className="relative bg-white rounded-lg p-2 shadow-md group-hover:shadow-lg transition-shadow">
+                  </a>
+                  
+                  {/* Ashknani Company Logo */}
+                  <a
+                    href="https://Ashknani-comp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="partner-logo flex items-center justify-center h-15 w-15 border-2 border-primary rounded-lg p-1 bg-white/90 transition-all duration-300 hover:scale-105 hover:bg-white/90 hover:opacity-100 opacity-90"
+                    aria-label="Ashknani Company"
+                    title="Ashknani Company"
+                  >
                     <img 
                       src="/Ashknani-comp.png"
                       alt="Ashknani Company" 
-                      className="h-10 w-auto"
+                      className="max-h-full max-w-full object-contain"
+                      loading="lazy"
                     />
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
 
