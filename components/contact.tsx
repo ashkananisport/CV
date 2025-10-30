@@ -54,6 +54,29 @@ export default function Contact() {
     window.open(whatsappUrl, "_blank")
   }
 
+  // بيانات الشركات مع روابط انستغرام
+  const companies = [
+    {
+      name: "Ashkanani Sport",
+      url: "https://ashknanisport2025.vercel.app/",
+      logo: "/ashkanani-logo.png",
+      instagram: "https://www.instagram.com/ashkanani.sport/",
+      isPrimary: true // علامة للشركة الرئيسية
+    },
+    {
+      name: "Spark Sport Academy",
+      url: "https://www.instagram.com/spark.sportkw/?hl=en",
+      logo: "/spark-logo.jpg",
+      instagram: "https://www.instagram.com/spark.sportkw/?hl=en"
+    },
+    {
+      name: "Ashknani Company",
+      url: "https://www.instagram.com/ashkanani.tournament?igsh=MWpmNWx3dGVqYXd4MQ%3D%3D",
+      logo: "/Ashknani-comp.png",
+      instagram: "https://www.instagram.com/ashkanani.tournament?igsh=MWpmNWx3dGVqYXd4MQ%3D%3D"
+    }
+  ]
+
   return (
     <>
       <section id="contact" ref={sectionRef} className="py-20 md:py-32 bg-muted/30">
@@ -244,80 +267,47 @@ export default function Contact() {
               <p className="text-foreground/60 text-xs sm:text-sm text-center md:text-left">{content.contact.footer}</p>
               
               <div className="flex flex-col sm:flex-row items-center gap-6">
-                <div className="flex gap-4">
-                  <a
-                    href={content.socialMedia.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground/60 hover:text-primary transition-colors"
-                    aria-label="Instagram"
-                  >
-                    <Instagram className="h-5 w-5" />
-                  </a>
-                  <a
-                    href={content.socialMedia.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground/60 hover:text-primary transition-colors"
-                    aria-label="Twitter/X"
-                  >
-                    <XIcon className="h-5 w-5" />
-                  </a>
-                </div>
                 
-                <div className="flex items-center gap-4">
-                  {/* Ashkanani Company Logo */}
-                  <a
-                      href="https://ashknanisport2025.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="partner-logo flex items-center justify-center h-15 w-20 border-2 border-primary rounded-lg p-2 
-                                bg-gray-900 transition-all duration-300 hover:scale-105 hover:bg-gray-800"
-                      aria-label="Ashkanani Company"
-                      title="Ashkanani Company"
-                    >
-                      <img 
-                        src="/ashkanani-logo.png"
-                        alt="Ashkanani Company" 
-                        className="max-h-full max-w-full object-contain"
-                        loading="lazy"
-                      />
-                    </a>
-
-                  
-                  {/* Spark Sport Academy Logo */}
-                  <a
-                    href="https://sparksport.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="partner-logo flex items-center justify-center h-15 w-15 border-2 border-primary rounded-lg p-1 bg-white/90 transition-all duration-300 hover:scale-105 hover:bg-white/90 hover:opacity-100 opacity-90"
-                    aria-label="Spark Sport Academy"
-                    title="Spark Sport Academy"
-                  >
-                    <img 
-                      src="/spark-logo.jpg"
-                      alt="Spark Sport Academy" 
-                      className="max-h-full max-w-full object-contain"
-                      loading="lazy"
-                    />
-                  </a>
-                  
-                  {/* Ashknani Company Logo */}
-                  <a
-                    href="https://Ashknani-comp.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="partner-logo flex items-center justify-center h-15 w-15 border-2 border-primary rounded-lg p-1 bg-white/90 transition-all duration-300 hover:scale-105 hover:bg-white/90 hover:opacity-100 opacity-90"
-                    aria-label="Ashknani Company"
-                    title="Ashknani Company"
-                  >
-                    <img 
-                      src="/Ashknani-comp.png"
-                      alt="Ashknani Company" 
-                      className="max-h-full max-w-full object-contain"
-                      loading="lazy"
-                    />
-                  </a>
+                <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+                  {companies.map((company, index) => (
+                    <div key={index} className="flex flex-col items-center">
+                      <a
+                        href={company.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`partner-logo flex items-center justify-center rounded-lg p-2 transition-all duration-300 hover:scale-105 ${
+                          company.isPrimary 
+                            ? "h-15 w-20 md:h-15 md:w-20 border-2 border-primary bg-gray-900 hover:bg-gray-800 shadow-lg" 
+                            : "h-15 w-20 md:h-15 md:w-20 border-2 border-primary bg-white/90 hover:bg-white/90 hover:opacity-100 opacity-90"
+                        }`}
+                        aria-label={company.name}
+                        title={company.name}
+                      >
+                        <img 
+                          src={company.logo}
+                          alt={company.name} 
+                          className="max-h-full max-w-full object-contain"
+                          loading="lazy"
+                        />
+                      </a>
+                      
+                      {/* رابط انستغرام أسفل اللوجو - يظهر دائماً على الموبايل وعند التمرير على سطح المكتب */}
+                      <a
+                        href={company.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`mt-2 text-primary hover:text-primary/80 transition-colors ${
+                          company.isPrimary ? "text-sm" : "text-xs"
+                        }`}
+                        aria-label={`${company.name} Instagram`}
+                      >
+                        <div className="flex items-center gap-1">
+                          <Instagram className="h-3 w-3 md:h-4 md:w-4" />
+                          <span>Instagram</span>
+                        </div>
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
