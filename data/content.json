@@ -440,18 +440,27 @@
         {
           "title": "Level One Sports Injuries Certificate",
           "organization": "Kuwait Football Association",
-          "date": "2022"
+          "date": "2022",
+          "images": [
+            "/my-pic2.jpg"
+          ]
         },
         {
           "title": "Sports Rehabilitation & Injury Diagnosis",
           "organization": "Kuwait Ministry of Health - Dr. Mohammed Al-Dosari",
-          "date": "2021"
+          "date": "2021",
+          "images": [
+            "/my-pic3.jpg"
+          ]
         },
         
          {
           "title": "Sports Injuries Diploma",
           "organization": "Qatari Sports Academy",
-          "date": "2021"
+          "date": "2021",
+          "images": [
+            "/my-pic4.jpg"
+          ]
         },
         {
           "title": "International Olympic Games Certificate",
@@ -480,12 +489,18 @@
         {
           "title": "Sports Psychology",
           "organization": "International Institute",
-          "date": "2019"
+          "date": "2019",
+          "images": [
+            "/my-pic7.jpg"
+          ]
         },
         {
           "title": "Level Three Managerial Certificate",
           "organization": "Kuwait Football Association",
-          "date": "2018"
+          "date": "2018",
+          "images": [
+            "/my-pic6.jpg"
+          ]
         },
         {
           "title": "Football Law & Arbitration Certificate",
@@ -558,7 +573,8 @@
         },
         {
           "title": "The Art of Public Speaking and Influence",
-          "description": "Course Trainer: Lecturer Eid Al-Rashidi, October 28-29, 2024"
+          "description": "Course Trainer: Lecturer Eid Al-Rashidi, October 28-29, 2024",
+          "images":["my-pic1.jpg"]
         },
         {
         "title": "Attendance Certificate: Governance of Sports Institutions Program",
@@ -566,7 +582,8 @@
         "organization": "Abdullah Al-Salem Leadership Development Center",
         "date": "November 3–7, 2024",
         "images": [
-          "/governance-sports-institutions-training-2024.jpg"
+          "/governance-sports-institutions-training-2024.jpg",
+          "/governance-sports-institutions-training-2024-2.jpg"
         ]
       },
 
@@ -615,18 +632,27 @@
         },
         {
           "title": "Methods and Management of Player Injuries",
-          "description": "Professional injury management and prevention strategies"
+          "description": "Professional injury management and prevention strategies",
+          "images": [
+            "/my-pic8.jpg"
+          ] 
          
         },
         {
           "title": "Healthy Behaviors and Nutrition for Athletes",
-          "description": "Sports nutrition and healthy lifestyle management"
+          "description": "Sports nutrition and healthy lifestyle management",
+          "images": [
+            "/my-pic9.jpg"
+          ]
           
         },
         
         {
           "title": "Professional Managers Course",
-          "description": "Kuwait Football Association professional management training"
+          "description": "Kuwait Football Association professional management training",
+          "images": [
+            "/my-pic5.jpg"
+          ]
         }
       ],
        "appreciationTitle": "Appreciation Certificates",
@@ -1103,19 +1129,28 @@
         {
           "title": "حاصل على شهادة الإصابات الرياضية في الملعب المستوى الأول",
           "organization": "اتحاد الكويت لكرة القدم",
-          "date": "2022"
+          "date": "2022",
+          "images": [
+            "/my-pic2.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة الاستشفاء الرياضي و تشخيص الإصابات",
           "organization": "وزارة الصحة الكويتية - د. محمد الدوسري",
-          "date": "2021"
+          "date": "2021",
+          "images": [
+            "/my-pic3.jpg"
+          ]
         },
         
 
         {
           "title": "حاصل على شهادة دبلوم إصابات الملعب",
           "organization": "الأكاديمية الرياضية القطرية",
-          "date": "2021"
+          "date": "2021",
+          "images": [
+            "/my-pic4.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة الملعاب الأولمبية العالمية",
@@ -1144,12 +1179,18 @@
         {
           "title": "علم النفس الرياضي",
           "organization": "المعهد الدولي",
-          "date": "2019"
+          "date": "2019",
+          "images": [
+            "/my-pic7.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة المستوى الثالث للاداريين",
           "organization": "اتحاد الكويت لكرة القدم",
-          "date": "2018"
+          "date": "2018",
+          "images": [
+            "/my-pic6.jpg"
+          ]
         },
         {
           "title": "حاصل على شهادة قانون كرة القدم {التحكيم}",
@@ -1203,7 +1244,8 @@
         
         {
           "title": "دورة فن الإلقاء والتأثير",
-          "description": "مدرب الدورة المحاضر/ عيد الرشيدي، 2024 / 10 /28-29"
+          "description": "مدرب الدورة المحاضر/ عيد الرشيدي، 2024 / 10 /28-29",
+          "images":["my-pic1.jpg"]
           
         },
         {
@@ -1212,7 +1254,8 @@
           "organization": "مركز عبدالله السالم لإعداد القادة",
           "date": "03–07 / 11 / 2024",
           "images": [
-            "/governance-sports-institutions-training-2024.jpg"
+            "/governance-sports-institutions-training-2024.jpg",
+            "/governance-sports-institutions-training-2024-2.jpg"
           ]
         },
 
@@ -1261,16 +1304,24 @@
         },
         {
           "title": "دورة طرق و إدارة ملف الإصابات للاعبين",
-          "description": "استراتيجيات إدارة الإصابات والوقاية المهنية"
+          "description": "استراتيجيات إدارة الإصابات والوقاية المهنية",
+          "images": ["/my-pic8.jpg"
+          ]
                 },
         {
           "title": "دورة السلوكيات الصحية و الغذائية للرياضيين",
-          "description": "التغذية الرياضية وإدارة نمط الحياة الصحي"
+          "description": "التغذية الرياضية وإدارة نمط الحياة الصحي",
+          "images": [
+            "/my-pic9.jpg"
+          ]
         },
        
         {
           "title": "دورة مدراء الاحتراف",
-          "description": "التدريب الإداري المهني في اتحاد الكويت لكرة القدم"
+          "description": "التدريب الإداري المهني في اتحاد الكويت لكرة القدم",
+          "images": [
+            "/my-pic5.jpg"
+          ]
         }
       ],
        "appreciationTitle": "شهادات التقدير",
