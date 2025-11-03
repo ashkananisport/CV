@@ -674,7 +674,17 @@
           "images": [
             "/first-sports-games-2022.jpg"
           ]
-        }
+        },
+        {
+        "title": "Certificate of Appreciation",
+        "description": "The Art Education Department extends its sincere thanks and appreciation to Mr. Ahmed Jaber Ashkanani for his dedicated efforts in delivering a lecture titled (Drawing the Future) to 12th-grade students.",
+        "organization": "Capital Educational District - Yaqoub Yousef Al-Ghanim Secondary School (Boys)",
+        "date": "28-10-2025",
+        "images": [
+          "/certificate-art-education-department.jpg"
+        ]
+      }
+
         ]   
     },
     "contact": {
@@ -1344,7 +1354,18 @@
             "images": [
               "/first-sports-games-2022.jpg"
             ]
+          },
+          {
+            "title": "شهادة شكر وتقدير",
+            "description": "يتقدم قسم التربية الفنية بجزيل الشكر والتقدير إلى الأستاذ أحمد جابر أشكناني على ما قدمه من جهوده المخلصة في تقديم محاضرة عنوانها (رسم المستقبل) لطلبة الثاني عشر.",
+            "organization": "منطقة العاصمة التعليمية - مدرسة ثانوية يعقوب يوسف الغنيم (بنين)",
+            "date": "28-10-2025",
+            "images": [
+              "/certificate-art-education-department.jpg"
+            ]
           }
+
+
         ]
     },
     "contact": {
