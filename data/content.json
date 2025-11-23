@@ -531,6 +531,13 @@
       "coursesTitle": "Training Courses",
       "courses": [
         {
+    "title": "Attendance Certificate for a Training Program",
+    "description": "Certificate awarded to Ahmed Jaber Mohamed Ashkanani for attending the training program (Basic Knowledge and Skills for Supervisory Positions) for the academic year 2025/2026, held from November 19 to 20, 2025, consisting of 8 training sessions, organized by the Development and Training Department - Ministry of Education.",
+    "images": [
+      "/certificate-supervisory-training.jpg"
+    ]
+        },
+        {
           "title": "Attendance Certificate: Sports Sponsorship Course",
           "description": "This is to certify that Ahmed Ashkanani attended the Sports Sponsorship Course, delivered remotely during the period from October 28 to 29, 2025, with a total of 4 training hours. The certificate is issued by the Leadership Development Institute, Ministry of Sport, and signed by Dr. Muznah Al-Marzouqi (General Director of the Leadership Development Institute) and Adel Al-Shuwairikh (Director of Education & Development Department).",
           "organization": "Ministry of Sport – Leadership Development Institute",
@@ -1230,6 +1237,14 @@
       ],
       "coursesTitle": "الدورات التدريبية",
       "courses": [
+        {
+        "title": "شهادة حضور برنامج تدريبي",
+        "description": "شهادة بحضور أحمد جابر محمد أشكناني للبرنامج التدريبي (المعارف والمهارات الأساسية للوظائف الإشرافية) للعام الدراسي 2025/2026، والذي عُقد خلال الفترة من 19 إلى 20 نوفمبر 2025 لمدة 8 محاضرات تدريبية، بتنظيم إدارة التطوير والتنمية - وزارة التربية.",
+        "images": [
+          "/certificate-supervisory-training.jpg"
+        ]
+      }
+      ,
         {
           "title": "الحوكمة والسياسات المحلية للدول المستضيفة للاحداث الرياضية الكبرى",
           "description": "معهد اعداد القادة بوزارة الرياضة 30-9-2025",
